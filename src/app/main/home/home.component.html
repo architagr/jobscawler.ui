@@ -1,0 +1,2195 @@
+<div id="__next">
+    <div class="page-wrapper">
+        <div class="modal fade" id="loginPopupModal">
+            <div class="modal-dialog modal-lg modal-dialog-centered login-modal modal-dialog-scrollable">
+                <div class="modal-content"><button type="button" class="closed-modal"
+                        data-bs-dismiss="modal"></button>
+                    <div class="modal-body">
+                        <div id="login-modal">
+                            <div class="login-form default-form">
+                                <div class="form-inner">
+                                    <h3>Login to Superio</h3>
+                                    <form method="post">
+                                        <div class="form-group"><label>Username</label><input type="text"
+                                                name="username" placeholder="Username" required=""></div>
+                                        <div class="form-group"><label>Password</label><input type="password"
+                                                name="password" placeholder="Password"></div>
+                                        <div class="form-group">
+                                            <div class="field-outer">
+                                                <div class="input-group checkboxes square"><input type="checkbox"
+                                                        name="remember-me" id="remember"><label for="remember"
+                                                        class="remember"><span class="custom-checkbox"></span>
+                                                        Remember me</label></div><a
+                                                    href="https://superio-next.vercel.app/#" class="pwd">Forgot
+                                                    password?</a>
+                                            </div>
+                                        </div>
+                                        <div class="form-group"><button class="theme-btn btn-style-one"
+                                                type="submit" name="log-in">Log In</button></div>
+                                    </form>
+                                    <div class="bottom-box">
+                                        <div class="text">Don't have an account? <a class="call-modal signup"
+                                                data-bs-dismiss="modal" data-bs-target="#registerModal"
+                                                data-bs-toggle="modal"
+                                                href="https://superio-next.vercel.app/#">Signup</a></div>
+                                        <div class="divider"><span>or</span></div>
+                                        <div class="btn-box row">
+                                            <div class="col-lg-6 col-md-12"><a
+                                                    href="https://superio-next.vercel.app/#"
+                                                    class="theme-btn social-btn-two facebook-btn"><i
+                                                        class="fab fa-facebook-f"></i> Log In via Facebook</a></div>
+                                            <div class="col-lg-6 col-md-12"><a
+                                                    href="https://superio-next.vercel.app/#"
+                                                    class="theme-btn social-btn-two google-btn"><i
+                                                        class="fab fa-google"></i> Log In via Gmail</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="registerModal">
+            <div class="modal-dialog modal-lg modal-dialog-centered login-modal modal-dialog-scrollable">
+                <div class="modal-content"><button type="button" class="closed-modal"
+                        data-bs-dismiss="modal"></button>
+                    <div class="modal-body">
+                        <div id="login-modal">
+                            <div class="login-form default-form">
+                                <div class="form-inner">
+                                    <h3>Create a Free Superio Account</h3>
+                                    <div class="react-tabs" data-rttabs="true">
+                                        <div class="form-group register-dual">
+                                            <ul class="btn-box row" role="tablist">
+                                                <li class="col-lg-6 col-md-12 react-tabs__tab--selected" role="tab"
+                                                    id="tab:r0:0" aria-selected="true" aria-disabled="false"
+                                                    aria-controls="panel:r0:0" tabindex="0" data-rttab="true">
+                                                    <button class="theme-btn btn-style-four"><i
+                                                            class="la la-user"></i> Candidate</button></li>
+                                                <li class="col-lg-6 col-md-12" role="tab" id="tab:r0:1"
+                                                    aria-selected="false" aria-disabled="false"
+                                                    aria-controls="panel:r0:1" data-rttab="true"><button
+                                                        class="theme-btn btn-style-four"><i
+                                                            class="la la-briefcase"></i> Employer</button></li>
+                                            </ul>
+                                        </div>
+                                        <div class="react-tabs__tab-panel react-tabs__tab-panel--selected"
+                                            role="tabpanel" id="panel:r0:0" aria-labelledby="tab:r0:0">
+                                            <form method="post"
+                                                action="https://superio-next.vercel.app/add-parcel.html">
+                                                <div class="form-group"><label>Email Address</label><input
+                                                        type="email" name="username" placeholder="Username"
+                                                        required=""></div>
+                                                <div class="form-group"><label>Password</label><input
+                                                        id="password-field" type="password" name="password"
+                                                        placeholder="Password"></div>
+                                                <div class="form-group"><button class="theme-btn btn-style-one"
+                                                        type="submit">Register</button></div>
+                                            </form>
+                                        </div>
+                                        <div class="react-tabs__tab-panel" role="tabpanel" id="panel:r0:1"
+                                            aria-labelledby="tab:r0:1"></div>
+                                    </div>
+                                    <div class="bottom-box">
+                                        <div class="divider"><span>or</span></div>
+                                        <div class="btn-box row">
+                                            <div class="col-lg-6 col-md-12"><a
+                                                    href="https://superio-next.vercel.app/#"
+                                                    class="theme-btn social-btn-two facebook-btn"><i
+                                                        class="fab fa-facebook-f"></i> Log In via Facebook</a></div>
+                                            <div class="col-lg-6 col-md-12"><a
+                                                    href="https://superio-next.vercel.app/#"
+                                                    class="theme-btn social-btn-two google-btn"><i
+                                                        class="fab fa-google"></i> Log In via Gmail</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="main-header  ">
+            <div class="main-box">
+                <div class="nav-outer">
+                    <div class="logo-box">
+                        <div class="logo">
+                            <a href="https://superio-next.vercel.app/">
+                                <img src="/assets/images/logo.svg" alt="brand">
+                            </a>
+                        </div>
+                    </div>
+                    <nav class="nav main-menu">
+                        <ul class="navigation" id="navbar">
+                            <li class="current dropdown"><span>Home</span>
+                                <div class="mega-menu">
+                                    <div class="mega-menu-bar row pt-0">
+                                        <div class="column col-lg-3 col-md-3 col-sm-12">
+                                            <ul>
+                                                <li class="current"><a href="https://superio-next.vercel.app/">Home
+                                                        Page 01</a></li>
+                                                <li class=""><a href="https://superio-next.vercel.app/home-2">Home
+                                                        Page 02</a></li>
+                                                <li class=""><a href="https://superio-next.vercel.app/home-3">Home
+                                                        Page 03</a></li>
+                                                <li class=""><a href="https://superio-next.vercel.app/home-4">Home
+                                                        Page 04</a></li>
+                                                <li class=""><a href="https://superio-next.vercel.app/home-5">Home
+                                                        Page 05</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="column col-lg-3 col-md-3 col-sm-12">
+                                            <ul>
+                                                <li class=""><a href="https://superio-next.vercel.app/home-6">Home
+                                                        Page 06</a></li>
+                                                <li class=""><a href="https://superio-next.vercel.app/home-7">Home
+                                                        Page 07</a></li>
+                                                <li class=""><a href="https://superio-next.vercel.app/home-8">Home
+                                                        Page 08</a></li>
+                                                <li class=""><a href="https://superio-next.vercel.app/home-9">Home
+                                                        Page 09</a></li>
+                                                <li class=""><a href="https://superio-next.vercel.app/home-10">Home
+                                                        Page 10</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="column col-lg-3 col-md-3 col-sm-12">
+                                            <ul>
+                                                <li class=""><a href="https://superio-next.vercel.app/home-11">Home
+                                                        Page 11</a></li>
+                                                <li class=""><a href="https://superio-next.vercel.app/home-12">Home
+                                                        Page 12</a></li>
+                                                <li class=""><a href="https://superio-next.vercel.app/home-13">Home
+                                                        Page 13</a></li>
+                                                <li class=""><a href="https://superio-next.vercel.app/home-14">Home
+                                                        Page 14</a></li>
+                                                <li class=""><a href="https://superio-next.vercel.app/home-15">Home
+                                                        Page 15</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="column col-lg-3 col-md-3 col-sm-12">
+                                            <ul>
+                                                <li class=""><a href="https://superio-next.vercel.app/home-16">Home
+                                                        Page 16</a></li>
+                                                <li class=""><a href="https://superio-next.vercel.app/home-17">Home
+                                                        Page 17</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class=" dropdown has-mega-menu" id="has-mega-menu"><span>Find Jobs</span>
+                                <div class="mega-menu">
+                                    <div class="mega-menu-bar row">
+                                        <div class="column col-lg-3 col-md-3 col-sm-12">
+                                            <h3>Jobs Listing</h3>
+                                            <ul>
+                                                <li class=""><a
+                                                        href="https://superio-next.vercel.app/job-list-v1">Job List
+                                                        V1</a></li>
+                                                <li class=""><a
+                                                        href="https://superio-next.vercel.app/job-list-v2">Job List
+                                                        V2</a></li>
+                                                <li class=""><a
+                                                        href="https://superio-next.vercel.app/job-list-v3">Job List
+                                                        V3</a></li>
+                                                <li class=""><a
+                                                        href="https://superio-next.vercel.app/job-list-v4">Job List
+                                                        V4</a></li>
+                                                <li class=""><a
+                                                        href="https://superio-next.vercel.app/job-list-v5">Job List
+                                                        V5</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="column col-lg-3 col-md-3 col-sm-12">
+                                            <h3>Jobs Listing</h3>
+                                            <ul>
+                                                <li class=""><a
+                                                        href="https://superio-next.vercel.app/job-list-v6">Job List
+                                                        V6</a></li>
+                                                <li class=""><a
+                                                        href="https://superio-next.vercel.app/job-list-v7">Job List
+                                                        V7</a></li>
+                                                <li class=""><a
+                                                        href="https://superio-next.vercel.app/job-list-v8">Job List
+                                                        V8</a></li>
+                                                <li class=""><a
+                                                        href="https://superio-next.vercel.app/job-list-v9">Job List
+                                                        V9</a></li>
+                                                <li class=""><a
+                                                        href="https://superio-next.vercel.app/job-list-v10">Job List
+                                                        V10</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="column col-lg-3 col-md-3 col-sm-12">
+                                            <h3>Jobs Listing</h3>
+                                            <ul>
+                                                <li class=""><a
+                                                        href="https://superio-next.vercel.app/job-list-v11">Job List
+                                                        V11</a></li>
+                                                <li class=""><a
+                                                        href="https://superio-next.vercel.app/job-list-v12">Job List
+                                                        V12</a></li>
+                                                <li class=""><a
+                                                        href="https://superio-next.vercel.app/job-list-v13">Job List
+                                                        V13</a></li>
+                                                <li class=""><a
+                                                        href="https://superio-next.vercel.app/job-list-v14">Job List
+                                                        V14</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="column col-lg-3 col-md-3 col-sm-12">
+                                            <h3>Jobs Single</h3>
+                                            <ul>
+                                                <li class=""><a
+                                                        href="https://superio-next.vercel.app/job-single-v1/1">Job
+                                                        Single V1</a></li>
+                                                <li class=""><a
+                                                        href="https://superio-next.vercel.app/job-single-v2/2">Job
+                                                        Single V2</a></li>
+                                                <li class=""><a
+                                                        href="https://superio-next.vercel.app/job-single-v3/3">Job
+                                                        Single V3</a></li>
+                                                <li class=""><a
+                                                        href="https://superio-next.vercel.app/job-single-v4/4">Job
+                                                        Single V4</a></li>
+                                                <li class=""><a
+                                                        href="https://superio-next.vercel.app/job-single-v5/5">Job
+                                                        Single V5</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class=" dropdown"><span>Employers</span>
+                                <ul>
+                                    <li class="dropdown"><span class="">Employers List</span>
+                                        <ul>
+                                            <li class=""><a
+                                                    href="https://superio-next.vercel.app/employers-list-v1">Employers
+                                                    List V1</a></li>
+                                            <li class=""><a
+                                                    href="https://superio-next.vercel.app/employers-list-v2">Employers
+                                                    List V2</a></li>
+                                            <li class=""><a
+                                                    href="https://superio-next.vercel.app/employers-list-v3">Employers
+                                                    List V3</a></li>
+                                            <li class=""><a
+                                                    href="https://superio-next.vercel.app/employers-list-v4">Employers
+                                                    List V4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><span class="">Employers Single</span>
+                                        <ul>
+                                            <li class=""><a
+                                                    href="https://superio-next.vercel.app/employers-single-v1/1">Employers
+                                                    Single V1</a></li>
+                                            <li class=""><a
+                                                    href="https://superio-next.vercel.app/employers-single-v2/2">Employers
+                                                    Single V2</a></li>
+                                            <li class=""><a
+                                                    href="https://superio-next.vercel.app/employers-single-v3/3">Employers
+                                                    Single V3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class=""><a
+                                            href="https://superio-next.vercel.app/employers-dashboard/dashboard">Employers
+                                            Dashboard</a></li>
+                                </ul>
+                            </li>
+                            <li class=" dropdown"><span>Candidates</span>
+                                <ul>
+                                    <li class="dropdown"><span class="">Candidates List</span>
+                                        <ul>
+                                            <li class=""><a
+                                                    href="https://superio-next.vercel.app/candidates-list-v1">Candidates
+                                                    List V1</a></li>
+                                            <li class=""><a
+                                                    href="https://superio-next.vercel.app/candidates-list-v2">Candidates
+                                                    List V2</a></li>
+                                            <li class=""><a
+                                                    href="https://superio-next.vercel.app/candidates-list-v3">Candidates
+                                                    List V3</a></li>
+                                            <li class=""><a
+                                                    href="https://superio-next.vercel.app/candidates-list-v4">Candidates
+                                                    List V4</a></li>
+                                            <li class=""><a
+                                                    href="https://superio-next.vercel.app/candidates-list-v5">Candidates
+                                                    List V5</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><span class="">Candidates Single</span>
+                                        <ul>
+                                            <li class=""><a
+                                                    href="https://superio-next.vercel.app/candidates-single-v1/1">Candidates
+                                                    Single V1</a></li>
+                                            <li class=""><a
+                                                    href="https://superio-next.vercel.app/candidates-single-v2/2">Candidates
+                                                    Single V2</a></li>
+                                            <li class=""><a
+                                                    href="https://superio-next.vercel.app/candidates-single-v3/3">Candidates
+                                                    Single V3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class=""><a
+                                            href="https://superio-next.vercel.app/candidates-dashboard/dashboard">Candidates
+                                            Dashboard</a></li>
+                                </ul>
+                            </li>
+                            <li class=" dropdown"><span>Blog</span>
+                                <ul>
+                                    <li class=""><a href="https://superio-next.vercel.app/blog-list-v1">Blog List
+                                            V1</a></li>
+                                    <li class=""><a href="https://superio-next.vercel.app/blog-list-v2">Blog List
+                                            V2</a></li>
+                                    <li class=""><a href="https://superio-next.vercel.app/blog-list-v3">Blog List
+                                            V3</a></li>
+                                    <li class=""><a href="https://superio-next.vercel.app/blog-details/1">Blog
+                                            Details</a></li>
+                                </ul>
+                            </li>
+                            <li class=" dropdown"><span>Pages</span>
+                                <ul>
+                                    <li class="dropdown"><span class="">Shop</span>
+                                        <ul>
+                                            <li class=""><a
+                                                    href="https://superio-next.vercel.app/shop/shop-list">Shop
+                                                    List</a></li>
+                                            <li class=""><a
+                                                    href="https://superio-next.vercel.app/shop/shop-single/1">Shop
+                                                    Single</a></li>
+                                            <li class=""><a
+                                                    href="https://superio-next.vercel.app/shop/cart">Cart</a></li>
+                                            <li class=""><a
+                                                    href="https://superio-next.vercel.app/shop/checkout">Checkout</a>
+                                            </li>
+                                            <li class=""><a
+                                                    href="https://superio-next.vercel.app/shop/order-completed">Order
+                                                    Completed</a></li>
+                                            <li class=""><a href="https://superio-next.vercel.app/login">Login</a>
+                                            </li>
+                                            <li class=""><a
+                                                    href="https://superio-next.vercel.app/register">Register</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class=""><a href="https://superio-next.vercel.app/about">About</a></li>
+                                    <li class=""><a href="https://superio-next.vercel.app/pricing">Pricing</a></li>
+                                    <li class=""><a href="https://superio-next.vercel.app/faq">FAQ's</a></li>
+                                    <li class=""><a href="https://superio-next.vercel.app/terms">Terms</a></li>
+                                    <li class=""><a href="https://superio-next.vercel.app/invoice">Invoice</a></li>
+                                    <li class=""><a href="https://superio-next.vercel.app/contact">Contact</a></li>
+                                    <li class=""><a href="https://superio-next.vercel.app/404">404</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="outer-box"><a class="upload-cv"
+                        href="https://superio-next.vercel.app/candidates-dashboard/cv-manager">Upload your CV</a>
+                    <div class="btn-box"><a href="https://superio-next.vercel.app/#"
+                            class="theme-btn btn-style-three call-modal" data-bs-toggle="modal"
+                            data-bs-target="#loginPopupModal">Login / Register</a><a class="theme-btn btn-style-one"
+                            href="https://superio-next.vercel.app/employers-dashboard/post-jobs">Job Post</a></div>
+                </div>
+            </div>
+        </header>
+        <header class="main-header main-header-mobile">
+            <div class="auto-container">
+                <div class="inner-box">
+                    <div class="nav-outer">
+                        <div class="logo-box">
+                            <div class="logo"><a href="https://superio-next.vercel.app/"><img
+                                        src="/assets/images/logo.svg" alt="brand"></a></div>
+                        </div>
+                        <div class="offcanvas offcanvas-start mobile_menu-contnet" tabindex="-1" id="offcanvasMenu"
+                            data-bs-scroll="true">
+                            <div class="pro-header"><a href="https://superio-next.vercel.app/"><img
+                                        src="/assets/images/logo.svg" alt="brand"></a>
+                                <div class="fix-icon" data-bs-dismiss="offcanvas" aria-label="Close"><span
+                                        class="flaticon-close"></span></div>
+                            </div>
+                            <aside data-testid="ps-sidebar-root-test-id" class="ps-sidebar-root css-1k88rtw"
+                                width="250px">
+                                <div data-testid="ps-sidebar-container-test-id"
+                                    class="ps-sidebar-container css-dip3t8">
+                                    <nav class="ps-menu-root css-vj11vy">
+                                        <ul class="css-ewdv3l">
+                                            <li class="ps-menuitem-root ps-submenu-root menu-active css-1642kfo"><a
+                                                    data-testid="ps-menu-button-test-id"
+                                                    class="ps-menu-button css-1bdadyq"><span
+                                                        class="ps-menu-label css-12w9als">Home</span><span
+                                                        class="ps-submenu-expand-icon css-1cuxlhl"><span
+                                                            class="css-honxw6"></span></span></a>
+                                                <div data-testid="ps-submenu-content-test-id"
+                                                    class="ps-submenu-content css-z5rm24">
+                                                    <ul class="css-ewdv3l">
+                                                        <li class="ps-menuitem-root menu-active-link css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Home Page
+                                                                    01</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Home Page
+                                                                    02</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/home-2"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Home Page
+                                                                    03</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/home-3"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Home Page
+                                                                    04</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/home-4"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Home Page
+                                                                    05</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/home-5"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Home Page
+                                                                    06</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/home-6"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Home Page
+                                                                    07</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/home-7"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Home Page
+                                                                    08</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/home-8"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Home Page
+                                                                    09</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/home-9"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Home Page
+                                                                    10</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/home-10"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Home Page
+                                                                    11</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/home-11"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Home Page
+                                                                    12</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/home-12"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Home Page
+                                                                    13</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/home-13"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Home Page
+                                                                    14</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/home-14"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Home Page
+                                                                    15</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/home-15"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Home Page
+                                                                    16</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/home-16"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Home Page
+                                                                    17</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/home-17"></a>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="ps-menuitem-root ps-submenu-root css-1642kfo"><a
+                                                    data-testid="ps-menu-button-test-id"
+                                                    class="ps-menu-button css-1bdadyq"><span
+                                                        class="ps-menu-label css-12w9als">Job Listing</span><span
+                                                        class="ps-submenu-expand-icon css-1cuxlhl"><span
+                                                            class="css-honxw6"></span></span></a>
+                                                <div data-testid="ps-submenu-content-test-id"
+                                                    class="ps-submenu-content css-z5rm24">
+                                                    <ul class="css-ewdv3l">
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Job List
+                                                                    V1</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/job-list-v1"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Job List
+                                                                    V2</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/job-list-v2"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Job List
+                                                                    V3</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/job-list-v3"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Job List
+                                                                    V4</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/job-list-v4"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Job List
+                                                                    V5</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/job-list-v5"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Job List
+                                                                    V6</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/job-list-v6"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Job List
+                                                                    V7</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/job-list-v7"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Job List
+                                                                    V8</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/job-list-v8"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Job List
+                                                                    V9</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/job-list-v9"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Job List
+                                                                    V10</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/job-list-v10"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Job List
+                                                                    V11</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/job-list-v11"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Job List
+                                                                    V12</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/job-list-v12"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Job List
+                                                                    V13</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/job-list-v13"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Job List
+                                                                    V14</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/job-list-v14"></a>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="ps-menuitem-root ps-submenu-root css-1642kfo"><a
+                                                    data-testid="ps-menu-button-test-id"
+                                                    class="ps-menu-button css-1bdadyq"><span
+                                                        class="ps-menu-label css-12w9als">Job Single</span><span
+                                                        class="ps-submenu-expand-icon css-1cuxlhl"><span
+                                                            class="css-honxw6"></span></span></a>
+                                                <div data-testid="ps-submenu-content-test-id"
+                                                    class="ps-submenu-content css-z5rm24">
+                                                    <ul class="css-ewdv3l">
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Job Single
+                                                                    V1</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/job-single-v1/1"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Job Single
+                                                                    V2</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/job-single-v2/2"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Job Single
+                                                                    V3</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/job-single-v3/3"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Job Single
+                                                                    V4</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/job-single-v4/4"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Job Single
+                                                                    V5</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/job-single-v5/5"></a>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="ps-menuitem-root ps-submenu-root css-1642kfo"><a
+                                                    data-testid="ps-menu-button-test-id"
+                                                    class="ps-menu-button css-1bdadyq"><span
+                                                        class="ps-menu-label css-12w9als">Employers List</span><span
+                                                        class="ps-submenu-expand-icon css-1cuxlhl"><span
+                                                            class="css-honxw6"></span></span></a>
+                                                <div data-testid="ps-submenu-content-test-id"
+                                                    class="ps-submenu-content css-z5rm24">
+                                                    <ul class="css-ewdv3l">
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Employers List
+                                                                    V1</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/employers-list-v1"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Employers List
+                                                                    V2</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/employers-list-v2"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Employers List
+                                                                    V3</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/employers-list-v3"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Employers List
+                                                                    V4</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/employers-list-v4"></a>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="ps-menuitem-root ps-submenu-root css-1642kfo"><a
+                                                    data-testid="ps-menu-button-test-id"
+                                                    class="ps-menu-button css-1bdadyq"><span
+                                                        class="ps-menu-label css-12w9als">Employers
+                                                        Single</span><span
+                                                        class="ps-submenu-expand-icon css-1cuxlhl"><span
+                                                            class="css-honxw6"></span></span></a>
+                                                <div data-testid="ps-submenu-content-test-id"
+                                                    class="ps-submenu-content css-z5rm24">
+                                                    <ul class="css-ewdv3l">
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Employers
+                                                                    Single V1</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/employers-single-v1/1"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Employers
+                                                                    Single V2</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/employers-single-v2/2"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Employers
+                                                                    Single V3</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/employers-single-v3/3"></a>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="ps-menuitem-root ps-submenu-root css-1642kfo"><a
+                                                    data-testid="ps-menu-button-test-id"
+                                                    class="ps-menu-button css-1bdadyq"><span
+                                                        class="ps-menu-label css-12w9als">Candidates
+                                                        List</span><span
+                                                        class="ps-submenu-expand-icon css-1cuxlhl"><span
+                                                            class="css-honxw6"></span></span></a>
+                                                <div data-testid="ps-submenu-content-test-id"
+                                                    class="ps-submenu-content css-z5rm24">
+                                                    <ul class="css-ewdv3l">
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Candidates
+                                                                    List V1</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/candidates-list-v1"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Candidates
+                                                                    List V2</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/candidates-list-v2"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Candidates
+                                                                    List V3</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/candidates-list-v3"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Candidates
+                                                                    List V4</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/candidates-list-v4"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Candidates
+                                                                    List V5</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/candidates-list-v5"></a>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="ps-menuitem-root ps-submenu-root css-1642kfo"><a
+                                                    data-testid="ps-menu-button-test-id"
+                                                    class="ps-menu-button css-1bdadyq"><span
+                                                        class="ps-menu-label css-12w9als">Candidates
+                                                        Single</span><span
+                                                        class="ps-submenu-expand-icon css-1cuxlhl"><span
+                                                            class="css-honxw6"></span></span></a>
+                                                <div data-testid="ps-submenu-content-test-id"
+                                                    class="ps-submenu-content css-z5rm24">
+                                                    <ul class="css-ewdv3l">
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Candidates
+                                                                    Single V1</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/candidates-single-v1/1"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Candidates
+                                                                    Single V2</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/candidates-single-v2/2"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Candidates
+                                                                    Single V3</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/candidates-single-v3/3"></a>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="ps-menuitem-root ps-submenu-root css-1642kfo"><a
+                                                    data-testid="ps-menu-button-test-id"
+                                                    class="ps-menu-button css-1bdadyq"><span
+                                                        class="ps-menu-label css-12w9als">Blog</span><span
+                                                        class="ps-submenu-expand-icon css-1cuxlhl"><span
+                                                            class="css-honxw6"></span></span></a>
+                                                <div data-testid="ps-submenu-content-test-id"
+                                                    class="ps-submenu-content css-z5rm24">
+                                                    <ul class="css-ewdv3l">
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Blog List
+                                                                    V1</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/blog-list-v1"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Blog List
+                                                                    V2</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/blog-list-v2"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Blog List
+                                                                    V3</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/blog-list-v3"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Blog
+                                                                    Details</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/blog-details/1"></a>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="ps-menuitem-root ps-submenu-root css-1642kfo"><a
+                                                    data-testid="ps-menu-button-test-id"
+                                                    class="ps-menu-button css-1bdadyq"><span
+                                                        class="ps-menu-label css-12w9als">Pages</span><span
+                                                        class="ps-submenu-expand-icon css-1cuxlhl"><span
+                                                            class="css-honxw6"></span></span></a>
+                                                <div data-testid="ps-submenu-content-test-id"
+                                                    class="ps-submenu-content css-z5rm24">
+                                                    <ul class="css-ewdv3l">
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">About</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/about"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Pricing</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/pricing"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">FAQ's</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/faq"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Terms</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/terms"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Invoice</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/invoice"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Contact</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/contact"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">404</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/404"></a>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="ps-menuitem-root ps-submenu-root css-1642kfo"><a
+                                                    data-testid="ps-menu-button-test-id"
+                                                    class="ps-menu-button css-1bdadyq"><span
+                                                        class="ps-menu-label css-12w9als">Shop</span><span
+                                                        class="ps-submenu-expand-icon css-1cuxlhl"><span
+                                                            class="css-honxw6"></span></span></a>
+                                                <div data-testid="ps-submenu-content-test-id"
+                                                    class="ps-submenu-content css-z5rm24">
+                                                    <ul class="css-ewdv3l">
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Shop
+                                                                    List</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/shop/shop-list"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Shop
+                                                                    Single</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/shop/shop-single/1"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">
+                                                                    Cart</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/shop/cart"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Checkout</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/shop/checkout"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Order
+                                                                    Completed</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/shop/order-completed"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Login</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/login"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Register</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/register"></a>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="ps-menuitem-root ps-submenu-root css-1642kfo"><a
+                                                    data-testid="ps-menu-button-test-id"
+                                                    class="ps-menu-button css-1bdadyq"><span
+                                                        class="ps-menu-label css-12w9als">Dashboard</span><span
+                                                        class="ps-submenu-expand-icon css-1cuxlhl"><span
+                                                            class="css-honxw6"></span></span></a>
+                                                <div data-testid="ps-submenu-content-test-id"
+                                                    class="ps-submenu-content css-z5rm24">
+                                                    <ul class="css-ewdv3l">
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Employers
+                                                                    Dashboard</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/employers-dashboard/dashboard"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ps-menuitem-root css-mf2zkt"><a
+                                                                class="ps-menu-button css-ra3y5v"
+                                                                data-testid="ps-menu-button-test-id"><span
+                                                                    class="ps-menu-label css-12w9als">Candidates
+                                                                    Dashboard</span></a>
+                                                            <div class="css-qugfoc"><a
+                                                                    href="https://superio-next.vercel.app/candidates-dashboard/dashboard"></a>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </aside>
+                            <div class="mm-add-listing mm-listitem pro-footer"><a
+                                    href="https://superio-next.vercel.app/#"
+                                    class="theme-btn btn-style-one mm-listitem__text">Job Post</a>
+                                <div class="mm-listitem__text">
+                                    <div class="contact-info"><span class="phone-num"><span>Call us</span><a
+                                                href="tel:1234567890">123 456 7890</a></span><span
+                                            class="address">329 Queensberry Street, North Melbourne VIC <br>3051,
+                                            Australia.</span><a href="mailto:support@superio.com"
+                                            class="email">support@superio.com</a></div>
+                                    <div class="social-links"><a href="https://www.facebook.com/" target="_blank"
+                                            rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a><a
+                                            href="https://www.twitter.com/" target="_blank"
+                                            rel="noopener noreferrer"><i class="fab fa-twitter"></i></a><a
+                                            href="https://www.instagram.com/" target="_blank"
+                                            rel="noopener noreferrer"><i class="fab fa-instagram"></i></a><a
+                                            href="https://www.linkedin.com/" target="_blank"
+                                            rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="outer-box">
+                        <div class="login-box"><a href="https://superio-next.vercel.app/#" class="call-modal"
+                                data-bs-toggle="modal" data-bs-target="#loginPopupModal"><span
+                                    class="icon icon-user"></span></a></div><a
+                            href="https://superio-next.vercel.app/#" class="mobile-nav-toggler"
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"><span
+                                class="flaticon-menu-1"></span></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="banner-section">
+            <div class="auto-container">
+                <div class="row">
+                    <div class="content-column col-lg-7 col-md-12 col-sm-12">
+                        <div class="inner-column aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
+                            <div class="title-box">
+                                <h3>There Are <span class="colored">93,178</span> Postings Here<br> For you!</h3>
+                                <div class="text">Find Jobs, Employment &amp; Career Opportunities</div>
+                            </div>
+                            <div class="job-search-form">
+                                <form>
+                                    <div class="row">
+                                        <div class="form-group col-lg-5 col-md-12 col-sm-12"><span
+                                                class="icon flaticon-search-1"></span><input type="text"
+                                                name="field_name" placeholder="Job title, keywords, or company">
+                                        </div>
+                                        <div class="form-group col-lg-4 col-md-12 col-sm-12 location"><span
+                                                class="icon flaticon-map-locator"></span><input type="text"
+                                                name="field_name" placeholder="City or postcode"></div>
+                                        <div class="form-group col-lg-3 col-md-12 col-sm-12 btn-box"><button
+                                                type="submit" class="theme-btn btn-style-one"><span
+                                                    class="btn-title">Find Jobs</span></button></div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="popular-searches aos-init aos-animate" data-aos="fade-up"
+                                data-aos-delay="1000"><span class="title">Popular Searches : </span><a
+                                    href="https://superio-next.vercel.app/#">Designer</a>, <a
+                                    href="https://superio-next.vercel.app/#">Developer</a>, <a
+                                    href="https://superio-next.vercel.app/#">Web</a>,<a
+                                    href="https://superio-next.vercel.app/#"> IOS</a>, <a
+                                    href="https://superio-next.vercel.app/#">PHP</a>, <a
+                                    href="https://superio-next.vercel.app/#">Senior</a>,<a
+                                    href="https://superio-next.vercel.app/#"> Engineer</a>,</div>
+                        </div>
+                    </div>
+                    <div class="image-column col-lg-5 col-md-12">
+                        <div class="image-box">
+                            <figure class="main-image aos-init aos-animate" data-aos="fade-in" data-aos-delay="500">
+                                <img src="/assets/images/banner-img-1.png" alt="hero image"> </figure>
+                            <div class="info_block aos-init aos-animate" data-aos="fade-in" data-aos-delay="1000">
+                                <span class="icon flaticon-email-3"></span>
+                                <p>Work Inquiry From <br>Ali Tufan</p>
+                            </div>
+                            <div class="info_block_two aos-init aos-animate" data-aos="fade-in"
+                                data-aos-delay="2000">
+                                <p>10k+ Candidates</p>
+                                <div class="image"><img src="/assets/images/multi-peoples.png" alt="mulit people">
+                                </div>
+                            </div>
+                            <div class="info_block_three aos-init aos-animate" data-aos="fade-in"
+                                data-aos-delay="1500"><span class="icon flaticon-briefcase"></span>
+                                <p>Creative Agency</p><span class="sub-text">Startup</span><span
+                                    class="right_icon fa fa-check"></span>
+                            </div>
+                            <div class="info_block_four aos-init aos-animate" data-aos="fade-in"
+                                data-aos-delay="2500"><span class="icon flaticon-file"></span>
+                                <div class="inner">
+                                    <p>Upload Your CV</p><span class="sub-text">It only takes a few seconds</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="job-categories ui-job-categories">
+            <div class="auto-container">
+                <div class="sec-title text-center">
+                    <h2>Popular Job Categories</h2>
+                    <div class="text">2020 jobs live - 293 added today.</div>
+                </div>
+                <div class="row aos-init aos-animate" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                    <div class="category-block col-lg-4 col-md-6 col-sm-12">
+                        <div class="inner-box">
+                            <div class="content"><span class="icon flaticon-money-1"></span>
+                                <h4><a href="https://superio-next.vercel.app/job-list-v1">Accounting / Finance</a>
+                                </h4>
+                                <p>(2 open positions)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-block col-lg-4 col-md-6 col-sm-12">
+                        <div class="inner-box">
+                            <div class="content"><span class="icon flaticon-promotion"></span>
+                                <h4><a href="https://superio-next.vercel.app/job-list-v1">Marketing</a></h4>
+                                <p>(86 open positions)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-block col-lg-4 col-md-6 col-sm-12">
+                        <div class="inner-box">
+                            <div class="content"><span class="icon flaticon-vector"></span>
+                                <h4><a href="https://superio-next.vercel.app/job-list-v1">Design</a></h4>
+                                <p>(43 open positions)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-block col-lg-4 col-md-6 col-sm-12">
+                        <div class="inner-box">
+                            <div class="content"><span class="icon flaticon-web-programming"></span>
+                                <h4><a href="https://superio-next.vercel.app/job-list-v1">Development</a></h4>
+                                <p>(12 open positions)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-block col-lg-4 col-md-6 col-sm-12">
+                        <div class="inner-box">
+                            <div class="content"><span class="icon flaticon-headhunting"></span>
+                                <h4><a href="https://superio-next.vercel.app/job-list-v1">Human Resource</a></h4>
+                                <p>(55 open positions)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-block col-lg-4 col-md-6 col-sm-12">
+                        <div class="inner-box">
+                            <div class="content"><span class="icon flaticon-rocket-ship"></span>
+                                <h4><a href="https://superio-next.vercel.app/job-list-v1">Automotive Jobs</a></h4>
+                                <p>(2 open positions)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-block col-lg-4 col-md-6 col-sm-12">
+                        <div class="inner-box">
+                            <div class="content"><span class="icon flaticon-money-1"></span>
+                                <h4><a href="https://superio-next.vercel.app/job-list-v1">Customer Service</a></h4>
+                                <p>(2 open positions)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-block col-lg-4 col-md-6 col-sm-12">
+                        <div class="inner-box">
+                            <div class="content"><span class="icon flaticon-first-aid-kit-1"></span>
+                                <h4><a href="https://superio-next.vercel.app/job-list-v1">Health and Care</a></h4>
+                                <p>(25 open positions)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-block col-lg-4 col-md-6 col-sm-12">
+                        <div class="inner-box">
+                            <div class="content"><span class="icon flaticon-car"></span>
+                                <h4><a href="https://superio-next.vercel.app/job-list-v1">Project Management</a>
+                                </h4>
+                                <p>(92 open positions)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="job-section">
+            <div class="auto-container">
+                <div class="sec-title text-center">
+                    <h2>Featured Jobs</h2>
+                    <div class="text">Know your worth and find the job that qualify your life</div>
+                </div>
+                <div class="row aos-init aos-animate" data-aos="fade-up">
+                    <div class="job-block col-lg-6 col-md-12 col-sm-12">
+                        <div class="inner-box">
+                            <div class="content"><span class="company-logo"><img src="/assets/images/1-1.png"
+                                        alt="item brand"></span>
+                                <h4><a href="https://superio-next.vercel.app/job-single-v1/1">Software Engineer
+                                        (Android), Libraries</a></h4>
+                                <ul class="job-info">
+                                    <li><span class="icon flaticon-briefcase"></span>Segment</li>
+                                    <li><span class="icon flaticon-map-locator"></span>London, UK</li>
+                                    <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
+                                    <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+                                </ul>
+                                <ul class="job-other-info">
+                                    <li class="time">Full Time</li>
+                                    <li class="privacy">Private</li>
+                                    <li class="required">Urgent</li>
+                                </ul><button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="job-block col-lg-6 col-md-12 col-sm-12">
+                        <div class="inner-box">
+                            <div class="content"><span class="company-logo"><img src="/assets/images/1-2.png"
+                                        alt="item brand"></span>
+                                <h4><a href="https://superio-next.vercel.app/job-single-v1/2">Recruiting
+                                        Coordinator</a></h4>
+                                <ul class="job-info">
+                                    <li><span class="icon flaticon-briefcase"></span>Catalyst</li>
+                                    <li><span class="icon flaticon-map-locator"></span>London, UK</li>
+                                    <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
+                                    <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+                                </ul>
+                                <ul class="job-other-info">
+                                    <li class="time">Freelancer</li>
+                                    <li class="privacy">Private</li>
+                                    <li class="required">Urgent</li>
+                                </ul><button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="job-block col-lg-6 col-md-12 col-sm-12">
+                        <div class="inner-box">
+                            <div class="content"><span class="company-logo"><img src="/assets/images/1-3.png"
+                                        alt="item brand"></span>
+                                <h4><a href="https://superio-next.vercel.app/job-single-v1/3">Product Manager,
+                                        Studio</a></h4>
+                                <ul class="job-info">
+                                    <li><span class="icon flaticon-briefcase"></span>Invision</li>
+                                    <li><span class="icon flaticon-map-locator"></span>London, UK</li>
+                                    <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
+                                    <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+                                </ul>
+                                <ul class="job-other-info">
+                                    <li class="time">Part Time</li>
+                                    <li class="privacy">Private</li>
+                                    <li class="required">Urgent</li>
+                                </ul><button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="job-block col-lg-6 col-md-12 col-sm-12">
+                        <div class="inner-box">
+                            <div class="content"><span class="company-logo"><img src="/assets/images/1-4.png"
+                                        alt="item brand"></span>
+                                <h4><a href="https://superio-next.vercel.app/job-single-v1/4">Senior Product
+                                        Designer</a></h4>
+                                <ul class="job-info">
+                                    <li><span class="icon flaticon-briefcase"></span>Upwork</li>
+                                    <li><span class="icon flaticon-map-locator"></span>London, UK</li>
+                                    <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
+                                    <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+                                </ul>
+                                <ul class="job-other-info">
+                                    <li class="time">Temporary</li>
+                                    <li class="privacy">Private</li>
+                                    <li class="required">Urgent</li>
+                                </ul><button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="job-block col-lg-6 col-md-12 col-sm-12">
+                        <div class="inner-box">
+                            <div class="content"><span class="company-logo"><img src="/assets/images/1-5.png"
+                                        alt="item brand"></span>
+                                <h4><a href="https://superio-next.vercel.app/job-single-v1/5">Senior Full Stack
+                                        Engineer, Creator Success</a></h4>
+                                <ul class="job-info">
+                                    <li><span class="icon flaticon-briefcase"></span>Medium</li>
+                                    <li><span class="icon flaticon-map-locator"></span>London, UK</li>
+                                    <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
+                                    <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+                                </ul>
+                                <ul class="job-other-info">
+                                    <li class="time">Full Time</li>
+                                    <li class="privacy">Private</li>
+                                    <li class="required">Urgent</li>
+                                </ul><button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="job-block col-lg-6 col-md-12 col-sm-12">
+                        <div class="inner-box">
+                            <div class="content"><span class="company-logo"><img src="/assets/images/1-6.png"
+                                        alt="item brand"></span>
+                                <h4><a href="https://superio-next.vercel.app/job-single-v1/6">Software Engineer
+                                        (Android), Libraries</a></h4>
+                                <ul class="job-info">
+                                    <li><span class="icon flaticon-briefcase"></span>Figma</li>
+                                    <li><span class="icon flaticon-map-locator"></span>London, UK</li>
+                                    <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
+                                    <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+                                </ul>
+                                <ul class="job-other-info">
+                                    <li class="time">Freelancer</li>
+                                    <li class="privacy">Private</li>
+                                    <li class="required">Urgent</li>
+                                </ul><button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-box"><a class="theme-btn btn-style-one bg-blue"
+                        href="https://superio-next.vercel.app/job-list-v1"><span class="btn-title">Load More
+                            Listing</span></a></div>
+            </div>
+        </section>
+        <section class="testimonial-section">
+            <div class="container-fluid">
+                <div class="sec-title text-center">
+                    <h2>Testimonials From Our Customers</h2>
+                    <div class="text">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor</div>
+                </div>
+            </div>
+            <div class="carousel-outer aos-init aos-animate" data-aos="fade-up">
+                <div class="testimonial-carousel gap-x25 center-item-active slick-list-visible">
+                    <div class="slick-slider slick-initialized" dir="ltr">
+                        <div class="slick-list">
+                            <div class="slick-track"
+                                style="width: 4480px; opacity: 1; transform: translate3d(-1280px, 0px, 0px);">
+                                <div data-index="-1" tabindex="-1" class="slick-slide slick-cloned"
+                                    aria-hidden="true" style="width: 640px;">
+                                    <div>
+                                        <div class="testimonial-block" tabindex="-1"
+                                            style="width: 100%; display: inline-block;">
+                                            <div class="inner-box">
+                                                <h4 class="title">Awesome Design</h4>
+                                                <div class="text">Without JobHunt i’d be homeless, they found me a
+                                                    job and got me
+                                                    sorted out quickly with everything! Can’t quite… The Mitech team
+                                                    works really hard to ensure high level of quality</div>
+                                                <div class="info-box">
+                                                    <div class="thumb"><img src="/assets/images/testi-thumb-3.png"
+                                                            alt="testimonial"></div>
+                                                    <h4 class="name">Ashley Jenkins</h4><span
+                                                        class="designation">Designer</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-index="0" class="slick-slide" tabindex="-1" aria-hidden="true"
+                                    style="outline: none; width: 640px;">
+                                    <div>
+                                        <div class="testimonial-block" tabindex="-1"
+                                            style="width: 100%; display: inline-block;">
+                                            <div class="inner-box">
+                                                <h4 class="title">Good theme</h4>
+                                                <div class="text">Without JobHunt i’d be homeless, they found me a
+                                                    job and got me
+                                                    sorted out quickly with everything! Can’t quite… The Mitech team
+                                                    works really hard to ensure high level of quality</div>
+                                                <div class="info-box">
+                                                    <div class="thumb"><img src="/assets/images/testi-thumb-1.png"
+                                                            alt="testimonial"></div>
+                                                    <h4 class="name">Nicole Wells</h4><span class="designation">Web
+                                                        Developer</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-index="1" class="slick-slide slick-active slick-current" tabindex="-1"
+                                    aria-hidden="false" style="outline: none; width: 640px;">
+                                    <div>
+                                        <div class="testimonial-block" tabindex="-1"
+                                            style="width: 100%; display: inline-block;">
+                                            <div class="inner-box">
+                                                <h4 class="title">Great quality!</h4>
+                                                <div class="text">Without JobHunt i’d be homeless, they found me a
+                                                    job and got me
+                                                    sorted out quickly with everything! Can’t quite… The Mitech team
+                                                    works really hard to ensure high level of quality</div>
+                                                <div class="info-box">
+                                                    <div class="thumb"><img src="/assets/images/testi-thumb-2.png"
+                                                            alt="testimonial"></div>
+                                                    <h4 class="name">Gabriel Nolan</h4><span
+                                                        class="designation">Consultant</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-index="2" class="slick-slide" tabindex="-1" aria-hidden="true"
+                                    style="outline: none; width: 640px;">
+                                    <div>
+                                        <div class="testimonial-block" tabindex="-1"
+                                            style="width: 100%; display: inline-block;">
+                                            <div class="inner-box">
+                                                <h4 class="title">Awesome Design</h4>
+                                                <div class="text">Without JobHunt i’d be homeless, they found me a
+                                                    job and got me
+                                                    sorted out quickly with everything! Can’t quite… The Mitech team
+                                                    works really hard to ensure high level of quality</div>
+                                                <div class="info-box">
+                                                    <div class="thumb"><img src="/assets/images/testi-thumb-3.png"
+                                                            alt="testimonial"></div>
+                                                    <h4 class="name">Ashley Jenkins</h4><span
+                                                        class="designation">Designer</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-index="3" tabindex="-1" class="slick-slide slick-cloned"
+                                    aria-hidden="true" style="width: 640px;">
+                                    <div>
+                                        <div class="testimonial-block" tabindex="-1"
+                                            style="width: 100%; display: inline-block;">
+                                            <div class="inner-box">
+                                                <h4 class="title">Good theme</h4>
+                                                <div class="text">Without JobHunt i’d be homeless, they found me a
+                                                    job and got me
+                                                    sorted out quickly with everything! Can’t quite… The Mitech team
+                                                    works really hard to ensure high level of quality</div>
+                                                <div class="info-box">
+                                                    <div class="thumb"><img src="/assets/images/testi-thumb-1.png"
+                                                            alt="testimonial"></div>
+                                                    <h4 class="name">Nicole Wells</h4><span class="designation">Web
+                                                        Developer</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-index="4" tabindex="-1" class="slick-slide slick-cloned"
+                                    aria-hidden="true" style="width: 640px;">
+                                    <div>
+                                        <div class="testimonial-block" tabindex="-1"
+                                            style="width: 100%; display: inline-block;">
+                                            <div class="inner-box">
+                                                <h4 class="title">Great quality!</h4>
+                                                <div class="text">Without JobHunt i’d be homeless, they found me a
+                                                    job and got me
+                                                    sorted out quickly with everything! Can’t quite… The Mitech team
+                                                    works really hard to ensure high level of quality</div>
+                                                <div class="info-box">
+                                                    <div class="thumb"><img src="/assets/images/testi-thumb-2.png"
+                                                            alt="testimonial"></div>
+                                                    <h4 class="name">Gabriel Nolan</h4><span
+                                                        class="designation">Consultant</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-index="5" tabindex="-1" class="slick-slide slick-cloned"
+                                    aria-hidden="true" style="width: 640px;">
+                                    <div>
+                                        <div class="testimonial-block" tabindex="-1"
+                                            style="width: 100%; display: inline-block;">
+                                            <div class="inner-box">
+                                                <h4 class="title">Awesome Design</h4>
+                                                <div class="text">Without JobHunt i’d be homeless, they found me a
+                                                    job and got me
+                                                    sorted out quickly with everything! Can’t quite… The Mitech team
+                                                    works really hard to ensure high level of quality</div>
+                                                <div class="info-box">
+                                                    <div class="thumb"><img src="/assets/images/testi-thumb-3.png"
+                                                            alt="testimonial"></div>
+                                                    <h4 class="name">Ashley Jenkins</h4><span
+                                                        class="designation">Designer</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="slick-dots" style="display: block;">
+                            <li class=""><button>1</button></li>
+                            <li class="slick-active"><button>2</button></li>
+                            <li class=""><button>3</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="clients-section">
+            <div class="sponsors-outer aos-init aos-animate" data-aos="fade">
+                <ul class="sponsors-carousel">
+                    <div class="slick-slider slick-initialized" dir="ltr">
+                        <div class="slick-list">
+                            <div class="slick-track"
+                                style="width: 4680px; opacity: 1; transform: translate3d(-1404px, 0px, 0px);">
+                                <div data-index="-6" tabindex="-1" class="slick-slide slick-cloned"
+                                    aria-hidden="true" style="width: 234px;">
+                                    <div>
+                                        <li class="slide-item" tabindex="-1"
+                                            style="width: 100%; display: inline-block;">
+                                            <figure class="image-box"><a
+                                                    href="https://superio-next.vercel.app/#"><img
+                                                        src="/assets/images/1-2(1).png" alt="brand"></a></figure>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div data-index="-5" tabindex="-1" class="slick-slide slick-cloned"
+                                    aria-hidden="true" style="width: 234px;">
+                                    <div>
+                                        <li class="slide-item" tabindex="-1"
+                                            style="width: 100%; display: inline-block;">
+                                            <figure class="image-box"><a
+                                                    href="https://superio-next.vercel.app/#"><img
+                                                        src="/assets/images/1-1(1).png" alt="brand"></a></figure>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div data-index="-4" tabindex="-1" class="slick-slide slick-cloned"
+                                    aria-hidden="true" style="width: 234px;">
+                                    <div>
+                                        <li class="slide-item" tabindex="-1"
+                                            style="width: 100%; display: inline-block;">
+                                            <figure class="image-box"><a
+                                                    href="https://superio-next.vercel.app/#"><img
+                                                        src="/assets/images/1-4(1).png" alt="brand"></a></figure>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div data-index="-3" tabindex="-1" class="slick-slide slick-cloned"
+                                    aria-hidden="true" style="width: 234px;">
+                                    <div>
+                                        <li class="slide-item" tabindex="-1"
+                                            style="width: 100%; display: inline-block;">
+                                            <figure class="image-box"><a
+                                                    href="https://superio-next.vercel.app/#"><img
+                                                        src="/assets/images/1-5(1).png" alt="brand"></a></figure>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div data-index="-2" tabindex="-1" class="slick-slide slick-cloned"
+                                    aria-hidden="true" style="width: 234px;">
+                                    <div>
+                                        <li class="slide-item" tabindex="-1"
+                                            style="width: 100%; display: inline-block;">
+                                            <figure class="image-box"><a
+                                                    href="https://superio-next.vercel.app/#"><img
+                                                        src="/assets/images/1-6(1).png" alt="brand"></a></figure>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div data-index="-1" tabindex="-1" class="slick-slide slick-cloned"
+                                    aria-hidden="true" style="width: 234px;">
+                                    <div>
+                                        <li class="slide-item" tabindex="-1"
+                                            style="width: 100%; display: inline-block;">
+                                            <figure class="image-box"><a
+                                                    href="https://superio-next.vercel.app/#"><img
+                                                        src="/assets/images/1-7.png" alt="brand"></a></figure>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1"
+                                    aria-hidden="false" style="outline: none; width: 234px;">
+                                    <div>
+                                        <li class="slide-item" tabindex="-1"
+                                            style="width: 100%; display: inline-block;">
+                                            <figure class="image-box"><a
+                                                    href="https://superio-next.vercel.app/#"><img
+                                                        src="/assets/images/1-1(1).png" alt="brand"></a></figure>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div data-index="1" class="slick-slide slick-active" tabindex="-1"
+                                    aria-hidden="false" style="outline: none; width: 234px;">
+                                    <div>
+                                        <li class="slide-item" tabindex="-1"
+                                            style="width: 100%; display: inline-block;">
+                                            <figure class="image-box"><a
+                                                    href="https://superio-next.vercel.app/#"><img
+                                                        src="/assets/images/1-2(1).png" alt="brand"></a></figure>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div data-index="2" class="slick-slide slick-active" tabindex="-1"
+                                    aria-hidden="false" style="outline: none; width: 234px;">
+                                    <div>
+                                        <li class="slide-item" tabindex="-1"
+                                            style="width: 100%; display: inline-block;">
+                                            <figure class="image-box"><a
+                                                    href="https://superio-next.vercel.app/#"><img
+                                                        src="/assets/images/1-1(1).png" alt="brand"></a></figure>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div data-index="3" class="slick-slide slick-active" tabindex="-1"
+                                    aria-hidden="false" style="outline: none; width: 234px;">
+                                    <div>
+                                        <li class="slide-item" tabindex="-1"
+                                            style="width: 100%; display: inline-block;">
+                                            <figure class="image-box"><a
+                                                    href="https://superio-next.vercel.app/#"><img
+                                                        src="/assets/images/1-4(1).png" alt="brand"></a></figure>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div data-index="4" class="slick-slide slick-active" tabindex="-1"
+                                    aria-hidden="false" style="outline: none; width: 234px;">
+                                    <div>
+                                        <li class="slide-item" tabindex="-1"
+                                            style="width: 100%; display: inline-block;">
+                                            <figure class="image-box"><a
+                                                    href="https://superio-next.vercel.app/#"><img
+                                                        src="/assets/images/1-5(1).png" alt="brand"></a></figure>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div data-index="5" class="slick-slide slick-active" tabindex="-1"
+                                    aria-hidden="false" style="outline: none; width: 234px;">
+                                    <div>
+                                        <li class="slide-item" tabindex="-1"
+                                            style="width: 100%; display: inline-block;">
+                                            <figure class="image-box"><a
+                                                    href="https://superio-next.vercel.app/#"><img
+                                                        src="/assets/images/1-6(1).png" alt="brand"></a></figure>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div data-index="6" class="slick-slide" tabindex="-1" aria-hidden="true"
+                                    style="outline: none; width: 234px;">
+                                    <div>
+                                        <li class="slide-item" tabindex="-1"
+                                            style="width: 100%; display: inline-block;">
+                                            <figure class="image-box"><a
+                                                    href="https://superio-next.vercel.app/#"><img
+                                                        src="/assets/images/1-7.png" alt="brand"></a></figure>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div data-index="7" tabindex="-1" class="slick-slide slick-cloned"
+                                    aria-hidden="true" style="width: 234px;">
+                                    <div>
+                                        <li class="slide-item" tabindex="-1"
+                                            style="width: 100%; display: inline-block;">
+                                            <figure class="image-box"><a
+                                                    href="https://superio-next.vercel.app/#"><img
+                                                        src="/assets/images/1-1(1).png" alt="brand"></a></figure>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div data-index="8" tabindex="-1" class="slick-slide slick-cloned"
+                                    aria-hidden="true" style="width: 234px;">
+                                    <div>
+                                        <li class="slide-item" tabindex="-1"
+                                            style="width: 100%; display: inline-block;">
+                                            <figure class="image-box"><a
+                                                    href="https://superio-next.vercel.app/#"><img
+                                                        src="/assets/images/1-2(1).png" alt="brand"></a></figure>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div data-index="9" tabindex="-1" class="slick-slide slick-cloned"
+                                    aria-hidden="true" style="width: 234px;">
+                                    <div>
+                                        <li class="slide-item" tabindex="-1"
+                                            style="width: 100%; display: inline-block;">
+                                            <figure class="image-box"><a
+                                                    href="https://superio-next.vercel.app/#"><img
+                                                        src="/assets/images/1-1(1).png" alt="brand"></a></figure>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div data-index="10" tabindex="-1" class="slick-slide slick-cloned"
+                                    aria-hidden="true" style="width: 234px;">
+                                    <div>
+                                        <li class="slide-item" tabindex="-1"
+                                            style="width: 100%; display: inline-block;">
+                                            <figure class="image-box"><a
+                                                    href="https://superio-next.vercel.app/#"><img
+                                                        src="/assets/images/1-4(1).png" alt="brand"></a></figure>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div data-index="11" tabindex="-1" class="slick-slide slick-cloned"
+                                    aria-hidden="true" style="width: 234px;">
+                                    <div>
+                                        <li class="slide-item" tabindex="-1"
+                                            style="width: 100%; display: inline-block;">
+                                            <figure class="image-box"><a
+                                                    href="https://superio-next.vercel.app/#"><img
+                                                        src="/assets/images/1-5(1).png" alt="brand"></a></figure>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div data-index="12" tabindex="-1" class="slick-slide slick-cloned"
+                                    aria-hidden="true" style="width: 234px;">
+                                    <div>
+                                        <li class="slide-item" tabindex="-1"
+                                            style="width: 100%; display: inline-block;">
+                                            <figure class="image-box"><a
+                                                    href="https://superio-next.vercel.app/#"><img
+                                                        src="/assets/images/1-6(1).png" alt="brand"></a></figure>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div data-index="13" tabindex="-1" class="slick-slide slick-cloned"
+                                    aria-hidden="true" style="width: 234px;">
+                                    <div>
+                                        <li class="slide-item" tabindex="-1"
+                                            style="width: 100%; display: inline-block;">
+                                            <figure class="image-box"><a
+                                                    href="https://superio-next.vercel.app/#"><img
+                                                        src="/assets/images/1-7.png" alt="brand"></a></figure>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </section>
+        <section class="about-section">
+            <div class="auto-container">
+                <div class="row">
+                    <div class="content-column col-lg-6 col-md-12 col-sm-12 order-2">
+                        <div class="inner-column aos-init aos-animate" data-aos="fade-left">
+                            <div class="sec-title">
+                                <h2>Millions of Jobs. Find the one that suits you.</h2>
+                                <div class="text">Search all the open positions on the web. Get your own
+                                    personalized salary estimate. Read reviews on over 600,000 companies worldwide.
+                                </div>
+                            </div>
+                            <ul class="list-style-one">
+                                <li>Bring to the table win-win survival</li>
+                                <li>Capitalize on low hanging fruit to identify</li>
+                                <li>But I must explain to you how all this</li>
+                            </ul><a class="theme-btn btn-style-one bg-blue"
+                                href="https://superio-next.vercel.app/register"><span class="btn-title">Get
+                                    Started</span></a>
+                        </div>
+                    </div>
+                    <div class="image-column col-lg-6 col-md-12 col-sm-12">
+                        <figure class="image aos-init aos-animate" data-aos="fade-right"><img
+                                src="/assets/images/image-2.jpg" alt="about"></figure>
+                        <div class="count-employers aos-init aos-animate" data-aos="flip-right">
+                            <div class="check-box"><span class="flaticon-tick"></span></div><span
+                                class="title">300k+ Employers</span>
+                            <figure class="image"><img src="/assets/images/multi-logo.png" alt="resource">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="fun-fact-section">
+                    <div class="row">
+                        <div class="counter-column col-lg-4 col-md-4 col-sm-12 aos-init aos-animate"
+                            data-aos="fade-up" data-aos-delay="0">
+                            <div class="count-box"><span class="count-text"><span><span>4</span></span></span>M
+                            </div>
+                            <h4 class="counter-title">4 million daily active users</h4>
+                        </div>
+                        <div class="counter-column col-lg-4 col-md-4 col-sm-12 aos-init aos-animate"
+                            data-aos="fade-up" data-aos-delay="100">
+                            <div class="count-box"><span class="count-text"><span><span>12</span></span></span>k
+                            </div>
+                            <h4 class="counter-title">Over 12k open job positions</h4>
+                        </div>
+                        <div class="counter-column col-lg-4 col-md-4 col-sm-12 aos-init aos-animate"
+                            data-aos="fade-up" data-aos-delay="200">
+                            <div class="count-box"><span class="count-text"><span><span>20</span></span></span>M
+                            </div>
+                            <h4 class="counter-title">Over 20 million stories shared</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="news-section">
+            <div class="auto-container">
+                <div class="sec-title text-center">
+                    <h2>Recent News Articles</h2>
+                    <div class="text">Fresh job related news content posted each day.</div>
+                </div>
+                <div class="row aos-init aos-animate" data-aos="fade-up">
+                    <div class="news-block col-lg-4 col-md-6 col-sm-12">
+                        <div class="inner-box">
+                            <div class="image-box">
+                                <figure class="image"><img src="/assets/images/1.jpg" alt="blog post"></figure>
+                            </div>
+                            <div class="lower-content">
+                                <ul class="post-meta">
+                                    <li><a href="https://superio-next.vercel.app/#">August 31, 2021</a></li>
+                                    <li><a href="https://superio-next.vercel.app/#">12 Comment</a></li>
+                                </ul>
+                                <h3><a href="https://superio-next.vercel.app/blog-details/1">Attract Sales And
+                                        Profits </a></h3>
+                                <p class="text">A job ravenously while Far much that one rank beheld after
+                                    outside....</p><a class="read-more"
+                                    href="https://superio-next.vercel.app/blog-details/1">Read More <i
+                                        class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-block col-lg-4 col-md-6 col-sm-12">
+                        <div class="inner-box">
+                            <div class="image-box">
+                                <figure class="image"><img src="/assets/images/2.jpg" alt="blog post"></figure>
+                            </div>
+                            <div class="lower-content">
+                                <ul class="post-meta">
+                                    <li><a href="https://superio-next.vercel.app/#">August 31, 2021</a></li>
+                                    <li><a href="https://superio-next.vercel.app/#">12 Comment</a></li>
+                                </ul>
+                                <h3><a href="https://superio-next.vercel.app/blog-details/2">5 Tips For Your Job
+                                        Interviews</a></h3>
+                                <p class="text">A job ravenously while Far much that one rank beheld after
+                                    outside....</p><a class="read-more"
+                                    href="https://superio-next.vercel.app/blog-details/2">Read More <i
+                                        class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-block col-lg-4 col-md-6 col-sm-12">
+                        <div class="inner-box">
+                            <div class="image-box">
+                                <figure class="image"><img src="/assets/images/3.jpg" alt="blog post"></figure>
+                            </div>
+                            <div class="lower-content">
+                                <ul class="post-meta">
+                                    <li><a href="https://superio-next.vercel.app/#">August 31, 2021</a></li>
+                                    <li><a href="https://superio-next.vercel.app/#">12 Comment</a></li>
+                                </ul>
+                                <h3><a href="https://superio-next.vercel.app/blog-details/3">Overworked Newspaper
+                                        Editor</a></h3>
+                                <p class="text">A job ravenously while Far much that one rank beheld after
+                                    outside....</p><a class="read-more"
+                                    href="https://superio-next.vercel.app/blog-details/3">Read More <i
+                                        class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="app-section">
+            <div class="auto-container">
+                <div class="row">
+                    <div class="image-column col-lg-6 col-md-12 col-sm-12">
+                        <div class="bg-shape"></div>
+                        <figure class="image aos-init aos-animate" data-aos="fade-right"><img
+                                src="/assets/images/mobile-app.png" alt="mobile app"></figure>
+                    </div>
+                    <div class="content-column col-lg-6 col-md-12 col-sm-12">
+                        <div class="inner-column aos-init aos-animate" data-aos="fade-left">
+                            <div class="sec-title"><span class="sub-title">DOWNLOAD &amp; ENJOY</span>
+                                <h2>Get the Superio Job<br> Search App</h2>
+                                <div class="text">Search through millions of jobs and find the right fit. Simply<br>
+                                    swipe right to apply.</div>
+                            </div>
+                            <div class="download-btn"><a href="https://superio-next.vercel.app/#"><img
+                                        src="/assets/images/apple.png" alt="icon"></a><a
+                                    href="https://superio-next.vercel.app/#"><img src="/assets/images/google.png"
+                                        alt="icon"></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="call-to-action">
+            <div class="auto-container">
+                <div class="outer-box aos-init" data-aos="fade-up">
+                    <div class="content-column">
+                        <div class="sec-title">
+                            <h2>Recruiting?</h2>
+                            <div class="text">Advertise your jobs to millions of monthly users and search 15.8
+                                million<br> CVs in our database.</div><a href="https://superio-next.vercel.app/#"
+                                class="theme-btn btn-style-one bg-blue"><span class="btn-title">Start Recruiting
+                                    Now</span></a>
+                        </div>
+                    </div>
+                    <div class="image-column"
+                        style="background-image: url(&quot;/assets/images/image-1.png&quot;);">
+                        <figure class="image"><img src="/assets/images/image-1.png" alt="resource"></figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="main-footer ">
+            <div class="auto-container">
+                <div class="widgets-section aos-init" data-aos="fade-up">
+                    <div class="row">
+                        <div class="big-column col-xl-4 col-lg-3 col-md-12">
+                            <div class="footer-column about-widget">
+                                <div class="logo"><a href="https://superio-next.vercel.app/#"><img
+                                            src="/assets/images/logo.svg" alt="brand"></a></div>
+                                <p class="phone-num"><span>Call us </span><a
+                                        href="https://superio-next.vercel.app/thebeehost@support.com">123 456
+                                        7890</a></p>
+                                <p class="address">329 Queensberry Street, North Melbourne VIC<br> 3051, Australia.
+                                    <br><a href="mailto:support@superio.com" class="email">support@superio.com</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="big-column col-xl-8 col-lg-9 col-md-12">
+                            <div class="row">
+                                <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+                                    <div class="footer-widget links-widget">
+                                        <h4 class="widget-title">For Candidates</h4>
+                                        <div class="widget-content">
+                                            <ul class="list">
+                                                <li><a href="https://superio-next.vercel.app/job-list-v11">Browse
+                                                        Jobs</a></li>
+                                                <li><a href="https://superio-next.vercel.app/job-list-v3">Browse
+                                                        Categories</a></li>
+                                                <li><a
+                                                        href="https://superio-next.vercel.app/candidates-dashboard/dashboard">Candidate
+                                                        Dashboard</a></li>
+                                                <li><a
+                                                        href="https://superio-next.vercel.app/candidates-dashboard/job-alerts">Job
+                                                        Alerts</a></li>
+                                                <li><a
+                                                        href="https://superio-next.vercel.app/candidates-dashboard/short-listed-jobs">My
+                                                        Bookmarks</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+                                    <div class="footer-widget links-widget">
+                                        <h4 class="widget-title">For Employers</h4>
+                                        <div class="widget-content">
+                                            <ul class="list">
+                                                <li><a href="https://superio-next.vercel.app/candidates-list-v1">Browse
+                                                        Candidates</a></li>
+                                                <li><a
+                                                        href="https://superio-next.vercel.app/employers-dashboard/dashboard">Employer
+                                                        Dashboard</a></li>
+                                                <li><a
+                                                        href="https://superio-next.vercel.app/employers-dashboard/post-jobs">Add
+                                                        Job</a></li>
+                                                <li><a
+                                                        href="https://superio-next.vercel.app/employers-dashboard/packages">Job
+                                                        Packages</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+                                    <div class="footer-widget links-widget">
+                                        <h4 class="widget-title">About Us</h4>
+                                        <div class="widget-content">
+                                            <ul class="list">
+                                                <li><a href="https://superio-next.vercel.app/about">About Us</a>
+                                                </li>
+                                                <li><a href="https://superio-next.vercel.app/invoice">Job Page
+                                                        Invoice</a></li>
+                                                <li><a href="https://superio-next.vercel.app/terms">Terms Page</a>
+                                                </li>
+                                                <li><a href="https://superio-next.vercel.app/blog-list-v1">Blog</a>
+                                                </li>
+                                                <li><a href="https://superio-next.vercel.app/contact">Contact</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+                                    <div class="footer-widget links-widget">
+                                        <h4 class="widget-title">Helpful Resources</h4>
+                                        <div class="widget-content">
+                                            <ul class="list">
+                                                <li><a href="https://superio-next.vercel.app/">Site Map</a></li>
+                                                <li><a href="https://superio-next.vercel.app/terms">Terms of Use</a>
+                                                </li>
+                                                <li><a href="https://superio-next.vercel.app/">Privacy Center</a>
+                                                </li>
+                                                <li><a href="https://superio-next.vercel.app/">Security Center</a>
+                                                </li>
+                                                <li><a href="https://superio-next.vercel.app/">Accessibility
+                                                        Center</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="auto-container">
+                    <div class="outer-box">
+                        <div class="copyright-text">© 2023 Superio by <a
+                                href="https://themeforest.net/user/ib-themes" target="_blank"
+                                rel="noopener noreferrer">ib-themes</a>. All Right Reserved.</div>
+                        <div class="social-links"><a href="https://www.facebook.com/" target="_blank"
+                                rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a><a
+                                href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer"><i
+                                    class="fab fa-twitter"></i></a><a href="https://www.instagram.com/"
+                                target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a><a
+                                href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><i
+                                    class="fab fa-linkedin-in"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="Toastify"></div>
+    </div>
+</div>
+<script id="__NEXT_DATA__"
+    type="application/json">{"props":{"pageProps":{}},"page":"/","query":{},"buildId":"crv5sAp1v6m0t7WbPEAhx","nextExport":true,"autoExport":true,"isFallback":false,"scriptLoader":[]}</script>
