@@ -1,3 +1,5 @@
+@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+
 [data-aos][data-aos][data-aos-duration="50"],
 body[data-aos-duration="50"] [data-aos] {
     transition-duration: 50ms
@@ -52005,4 +52007,8 @@ html {
     to {
         transform: rotate(1turn)
     }
+}
+
+.mat-mdc-dialog-content{
+    max-height: 100% !important;
 }

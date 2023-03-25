@@ -1,57 +1,7 @@
 <div id="__next">
     <div class="page-wrapper">
-        <div class="modal fade" id="loginPopupModal">
-            <div class="modal-dialog modal-lg modal-dialog-centered login-modal modal-dialog-scrollable">
-                <div class="modal-content"><button type="button" class="closed-modal"
-                        data-bs-dismiss="modal"></button>
-                    <div class="modal-body">
-                        <div id="login-modal">
-                            <div class="login-form default-form">
-                                <div class="form-inner">
-                                    <h3>Login to Superio</h3>
-                                    <form method="post">
-                                        <div class="form-group"><label>Username</label><input type="text"
-                                                name="username" placeholder="Username" required=""></div>
-                                        <div class="form-group"><label>Password</label><input type="password"
-                                                name="password" placeholder="Password"></div>
-                                        <div class="form-group">
-                                            <div class="field-outer">
-                                                <div class="input-group checkboxes square"><input type="checkbox"
-                                                        name="remember-me" id="remember"><label for="remember"
-                                                        class="remember"><span class="custom-checkbox"></span>
-                                                        Remember me</label></div><a
-                                                    href="https://superio-next.vercel.app/#" class="pwd">Forgot
-                                                    password?</a>
-                                            </div>
-                                        </div>
-                                        <div class="form-group"><button class="theme-btn btn-style-one"
-                                                type="submit" name="log-in">Log In</button></div>
-                                    </form>
-                                    <div class="bottom-box">
-                                        <div class="text">Don't have an account? <a class="call-modal signup"
-                                                data-bs-dismiss="modal" data-bs-target="#registerModal"
-                                                data-bs-toggle="modal"
-                                                href="https://superio-next.vercel.app/#">Signup</a></div>
-                                        <div class="divider"><span>or</span></div>
-                                        <div class="btn-box row">
-                                            <div class="col-lg-6 col-md-12"><a
-                                                    href="https://superio-next.vercel.app/#"
-                                                    class="theme-btn social-btn-two facebook-btn"><i
-                                                        class="fab fa-facebook-f"></i> Log In via Facebook</a></div>
-                                            <div class="col-lg-6 col-md-12"><a
-                                                    href="https://superio-next.vercel.app/#"
-                                                    class="theme-btn social-btn-two google-btn"><i
-                                                        class="fab fa-google"></i> Log In via Gmail</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="registerModal">
+        
+        <!-- <div class="modal fade" id="registerModal">
             <div class="modal-dialog modal-lg modal-dialog-centered login-modal modal-dialog-scrollable">
                 <div class="modal-content"><button type="button" class="closed-modal"
                         data-bs-dismiss="modal"></button>
@@ -96,11 +46,11 @@
                                         <div class="divider"><span>or</span></div>
                                         <div class="btn-box row">
                                             <div class="col-lg-6 col-md-12"><a
-                                                    href="https://superio-next.vercel.app/#"
+                                                    href="#"
                                                     class="theme-btn social-btn-two facebook-btn"><i
                                                         class="fab fa-facebook-f"></i> Log In via Facebook</a></div>
                                             <div class="col-lg-6 col-md-12"><a
-                                                    href="https://superio-next.vercel.app/#"
+                                                    href="#"
                                                     class="theme-btn social-btn-two google-btn"><i
                                                         class="fab fa-google"></i> Log In via Gmail</a></div>
                                         </div>
@@ -111,13 +61,13 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <header class="main-header  ">
             <div class="main-box">
                 <div class="nav-outer">
                     <div class="logo-box">
                         <div class="logo">
-                            <a href="https://superio-next.vercel.app/">
+                            <a href="/">
                                 <img src="/assets/images/logo.svg" alt="brand">
                             </a>
                         </div>
@@ -389,9 +339,9 @@
                 </div>
                 <div class="outer-box"><a class="upload-cv"
                         href="https://superio-next.vercel.app/candidates-dashboard/cv-manager">Upload your CV</a>
-                    <div class="btn-box"><a href="https://superio-next.vercel.app/#"
-                            class="theme-btn btn-style-three call-modal" data-bs-toggle="modal"
-                            data-bs-target="#loginPopupModal">Login / Register</a><a class="theme-btn btn-style-one"
+                    <div class="btn-box">
+                        <a href="javascript: void(0)" class="theme-btn btn-style-three call-modal" (click)="openDialog()">Login / Register</a>
+                        <a class="theme-btn btn-style-one"
                             href="https://superio-next.vercel.app/employers-dashboard/post-jobs">Job Post</a></div>
                 </div>
             </div>
@@ -1186,7 +1136,7 @@
                                 </div>
                             </aside>
                             <div class="mm-add-listing mm-listitem pro-footer"><a
-                                    href="https://superio-next.vercel.app/#"
+                                    href="#"
                                     class="theme-btn btn-style-one mm-listitem__text">Job Post</a>
                                 <div class="mm-listitem__text">
                                     <div class="contact-info"><span class="phone-num"><span>Call us</span><a
@@ -1207,10 +1157,12 @@
                         </div>
                     </div>
                     <div class="outer-box">
-                        <div class="login-box"><a href="https://superio-next.vercel.app/#" class="call-modal"
-                                data-bs-toggle="modal" data-bs-target="#loginPopupModal"><span
-                                    class="icon icon-user"></span></a></div><a
-                            href="https://superio-next.vercel.app/#" class="mobile-nav-toggler"
+                        <div class="login-box">
+                            <a href="javascript: void(0)" class="call-modal" (click)="openDialog()">
+                                <span class="icon icon-user"></span>
+                            </a>
+                        </div>
+                        <a href="#" class="mobile-nav-toggler"
                             data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"><span
                                 class="flaticon-menu-1"></span></a>
                     </div>
@@ -1244,13 +1196,13 @@
                             </div>
                             <div class="popular-searches aos-init aos-animate" data-aos="fade-up"
                                 data-aos-delay="1000"><span class="title">Popular Searches : </span><a
-                                    href="https://superio-next.vercel.app/#">Designer</a>, <a
-                                    href="https://superio-next.vercel.app/#">Developer</a>, <a
-                                    href="https://superio-next.vercel.app/#">Web</a>,<a
-                                    href="https://superio-next.vercel.app/#"> IOS</a>, <a
-                                    href="https://superio-next.vercel.app/#">PHP</a>, <a
-                                    href="https://superio-next.vercel.app/#">Senior</a>,<a
-                                    href="https://superio-next.vercel.app/#"> Engineer</a>,</div>
+                                    href="#">Designer</a>, <a
+                                    href="#">Developer</a>, <a
+                                    href="#">Web</a>,<a
+                                    href="#"> IOS</a>, <a
+                                    href="#">PHP</a>, <a
+                                    href="#">Senior</a>,<a
+                                    href="#"> Engineer</a>,</div>
                         </div>
                     </div>
                     <div class="image-column col-lg-5 col-md-12">
@@ -1684,7 +1636,7 @@
                                         <li class="slide-item" tabindex="-1"
                                             style="width: 100%; display: inline-block;">
                                             <figure class="image-box"><a
-                                                    href="https://superio-next.vercel.app/#"><img
+                                                    href="#"><img
                                                         src="/assets/images/1-2(1).png" alt="brand"></a></figure>
                                         </li>
                                     </div>
@@ -1695,7 +1647,7 @@
                                         <li class="slide-item" tabindex="-1"
                                             style="width: 100%; display: inline-block;">
                                             <figure class="image-box"><a
-                                                    href="https://superio-next.vercel.app/#"><img
+                                                    href="#"><img
                                                         src="/assets/images/1-1(1).png" alt="brand"></a></figure>
                                         </li>
                                     </div>
@@ -1706,7 +1658,7 @@
                                         <li class="slide-item" tabindex="-1"
                                             style="width: 100%; display: inline-block;">
                                             <figure class="image-box"><a
-                                                    href="https://superio-next.vercel.app/#"><img
+                                                    href="#"><img
                                                         src="/assets/images/1-4(1).png" alt="brand"></a></figure>
                                         </li>
                                     </div>
@@ -1717,7 +1669,7 @@
                                         <li class="slide-item" tabindex="-1"
                                             style="width: 100%; display: inline-block;">
                                             <figure class="image-box"><a
-                                                    href="https://superio-next.vercel.app/#"><img
+                                                    href="#"><img
                                                         src="/assets/images/1-5(1).png" alt="brand"></a></figure>
                                         </li>
                                     </div>
@@ -1728,7 +1680,7 @@
                                         <li class="slide-item" tabindex="-1"
                                             style="width: 100%; display: inline-block;">
                                             <figure class="image-box"><a
-                                                    href="https://superio-next.vercel.app/#"><img
+                                                    href="#"><img
                                                         src="/assets/images/1-6(1).png" alt="brand"></a></figure>
                                         </li>
                                     </div>
@@ -1739,7 +1691,7 @@
                                         <li class="slide-item" tabindex="-1"
                                             style="width: 100%; display: inline-block;">
                                             <figure class="image-box"><a
-                                                    href="https://superio-next.vercel.app/#"><img
+                                                    href="#"><img
                                                         src="/assets/images/1-7.png" alt="brand"></a></figure>
                                         </li>
                                     </div>
@@ -1750,7 +1702,7 @@
                                         <li class="slide-item" tabindex="-1"
                                             style="width: 100%; display: inline-block;">
                                             <figure class="image-box"><a
-                                                    href="https://superio-next.vercel.app/#"><img
+                                                    href="#"><img
                                                         src="/assets/images/1-1(1).png" alt="brand"></a></figure>
                                         </li>
                                     </div>
@@ -1761,7 +1713,7 @@
                                         <li class="slide-item" tabindex="-1"
                                             style="width: 100%; display: inline-block;">
                                             <figure class="image-box"><a
-                                                    href="https://superio-next.vercel.app/#"><img
+                                                    href="#"><img
                                                         src="/assets/images/1-2(1).png" alt="brand"></a></figure>
                                         </li>
                                     </div>
@@ -1772,7 +1724,7 @@
                                         <li class="slide-item" tabindex="-1"
                                             style="width: 100%; display: inline-block;">
                                             <figure class="image-box"><a
-                                                    href="https://superio-next.vercel.app/#"><img
+                                                    href="#"><img
                                                         src="/assets/images/1-1(1).png" alt="brand"></a></figure>
                                         </li>
                                     </div>
@@ -1783,7 +1735,7 @@
                                         <li class="slide-item" tabindex="-1"
                                             style="width: 100%; display: inline-block;">
                                             <figure class="image-box"><a
-                                                    href="https://superio-next.vercel.app/#"><img
+                                                    href="#"><img
                                                         src="/assets/images/1-4(1).png" alt="brand"></a></figure>
                                         </li>
                                     </div>
@@ -1794,7 +1746,7 @@
                                         <li class="slide-item" tabindex="-1"
                                             style="width: 100%; display: inline-block;">
                                             <figure class="image-box"><a
-                                                    href="https://superio-next.vercel.app/#"><img
+                                                    href="#"><img
                                                         src="/assets/images/1-5(1).png" alt="brand"></a></figure>
                                         </li>
                                     </div>
@@ -1805,7 +1757,7 @@
                                         <li class="slide-item" tabindex="-1"
                                             style="width: 100%; display: inline-block;">
                                             <figure class="image-box"><a
-                                                    href="https://superio-next.vercel.app/#"><img
+                                                    href="#"><img
                                                         src="/assets/images/1-6(1).png" alt="brand"></a></figure>
                                         </li>
                                     </div>
@@ -1816,7 +1768,7 @@
                                         <li class="slide-item" tabindex="-1"
                                             style="width: 100%; display: inline-block;">
                                             <figure class="image-box"><a
-                                                    href="https://superio-next.vercel.app/#"><img
+                                                    href="#"><img
                                                         src="/assets/images/1-7.png" alt="brand"></a></figure>
                                         </li>
                                     </div>
@@ -1827,7 +1779,7 @@
                                         <li class="slide-item" tabindex="-1"
                                             style="width: 100%; display: inline-block;">
                                             <figure class="image-box"><a
-                                                    href="https://superio-next.vercel.app/#"><img
+                                                    href="#"><img
                                                         src="/assets/images/1-1(1).png" alt="brand"></a></figure>
                                         </li>
                                     </div>
@@ -1838,7 +1790,7 @@
                                         <li class="slide-item" tabindex="-1"
                                             style="width: 100%; display: inline-block;">
                                             <figure class="image-box"><a
-                                                    href="https://superio-next.vercel.app/#"><img
+                                                    href="#"><img
                                                         src="/assets/images/1-2(1).png" alt="brand"></a></figure>
                                         </li>
                                     </div>
@@ -1849,7 +1801,7 @@
                                         <li class="slide-item" tabindex="-1"
                                             style="width: 100%; display: inline-block;">
                                             <figure class="image-box"><a
-                                                    href="https://superio-next.vercel.app/#"><img
+                                                    href="#"><img
                                                         src="/assets/images/1-1(1).png" alt="brand"></a></figure>
                                         </li>
                                     </div>
@@ -1860,7 +1812,7 @@
                                         <li class="slide-item" tabindex="-1"
                                             style="width: 100%; display: inline-block;">
                                             <figure class="image-box"><a
-                                                    href="https://superio-next.vercel.app/#"><img
+                                                    href="#"><img
                                                         src="/assets/images/1-4(1).png" alt="brand"></a></figure>
                                         </li>
                                     </div>
@@ -1871,7 +1823,7 @@
                                         <li class="slide-item" tabindex="-1"
                                             style="width: 100%; display: inline-block;">
                                             <figure class="image-box"><a
-                                                    href="https://superio-next.vercel.app/#"><img
+                                                    href="#"><img
                                                         src="/assets/images/1-5(1).png" alt="brand"></a></figure>
                                         </li>
                                     </div>
@@ -1882,7 +1834,7 @@
                                         <li class="slide-item" tabindex="-1"
                                             style="width: 100%; display: inline-block;">
                                             <figure class="image-box"><a
-                                                    href="https://superio-next.vercel.app/#"><img
+                                                    href="#"><img
                                                         src="/assets/images/1-6(1).png" alt="brand"></a></figure>
                                         </li>
                                     </div>
@@ -1893,7 +1845,7 @@
                                         <li class="slide-item" tabindex="-1"
                                             style="width: 100%; display: inline-block;">
                                             <figure class="image-box"><a
-                                                    href="https://superio-next.vercel.app/#"><img
+                                                    href="#"><img
                                                         src="/assets/images/1-7.png" alt="brand"></a></figure>
                                         </li>
                                     </div>
@@ -1973,8 +1925,8 @@
                             </div>
                             <div class="lower-content">
                                 <ul class="post-meta">
-                                    <li><a href="https://superio-next.vercel.app/#">August 31, 2021</a></li>
-                                    <li><a href="https://superio-next.vercel.app/#">12 Comment</a></li>
+                                    <li><a href="#">August 31, 2021</a></li>
+                                    <li><a href="#">12 Comment</a></li>
                                 </ul>
                                 <h3><a href="https://superio-next.vercel.app/blog-details/1">Attract Sales And
                                         Profits </a></h3>
@@ -1992,8 +1944,8 @@
                             </div>
                             <div class="lower-content">
                                 <ul class="post-meta">
-                                    <li><a href="https://superio-next.vercel.app/#">August 31, 2021</a></li>
-                                    <li><a href="https://superio-next.vercel.app/#">12 Comment</a></li>
+                                    <li><a href="#">August 31, 2021</a></li>
+                                    <li><a href="#">12 Comment</a></li>
                                 </ul>
                                 <h3><a href="https://superio-next.vercel.app/blog-details/2">5 Tips For Your Job
                                         Interviews</a></h3>
@@ -2011,8 +1963,8 @@
                             </div>
                             <div class="lower-content">
                                 <ul class="post-meta">
-                                    <li><a href="https://superio-next.vercel.app/#">August 31, 2021</a></li>
-                                    <li><a href="https://superio-next.vercel.app/#">12 Comment</a></li>
+                                    <li><a href="#">August 31, 2021</a></li>
+                                    <li><a href="#">12 Comment</a></li>
                                 </ul>
                                 <h3><a href="https://superio-next.vercel.app/blog-details/3">Overworked Newspaper
                                         Editor</a></h3>
@@ -2041,9 +1993,9 @@
                                 <div class="text">Search through millions of jobs and find the right fit. Simply<br>
                                     swipe right to apply.</div>
                             </div>
-                            <div class="download-btn"><a href="https://superio-next.vercel.app/#"><img
+                            <div class="download-btn"><a href="#"><img
                                         src="/assets/images/apple.png" alt="icon"></a><a
-                                    href="https://superio-next.vercel.app/#"><img src="/assets/images/google.png"
+                                    href="#"><img src="/assets/images/google.png"
                                         alt="icon"></a></div>
                         </div>
                     </div>
@@ -2057,7 +2009,7 @@
                         <div class="sec-title">
                             <h2>Recruiting?</h2>
                             <div class="text">Advertise your jobs to millions of monthly users and search 15.8
-                                million<br> CVs in our database.</div><a href="https://superio-next.vercel.app/#"
+                                million<br> CVs in our database.</div><a href="#"
                                 class="theme-btn btn-style-one bg-blue"><span class="btn-title">Start Recruiting
                                     Now</span></a>
                         </div>
@@ -2075,7 +2027,7 @@
                     <div class="row">
                         <div class="big-column col-xl-4 col-lg-3 col-md-12">
                             <div class="footer-column about-widget">
-                                <div class="logo"><a href="https://superio-next.vercel.app/#"><img
+                                <div class="logo"><a href="#"><img
                                             src="/assets/images/logo.svg" alt="brand"></a></div>
                                 <p class="phone-num"><span>Call us </span><a
                                         href="https://superio-next.vercel.app/thebeehost@support.com">123 456
