@@ -1,0 +1,14 @@
+.mobileInput{
+    input{
+        padding-left: 45px;
+    }
+    .unit {
+        position: absolute;
+        display: block;
+        left: 8px;
+        top: 17.5px;
+        z-index: 9;
+        color: #000;
+        font-size: 14px;
+    }
+}

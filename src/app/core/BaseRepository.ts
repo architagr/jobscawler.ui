@@ -3,19 +3,20 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { catchError, finalize } from 'rxjs/operators';
 import { NgxSpinnerService } from 'ngx-spinner';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class BaseRepository {
-  private baseUrl = 'https://api.example.com/';
+  private baseUrl = environment.BaseUrl;
 
   constructor(private http: HttpClient) { }//ng update @angular/cli @angular/core
 
-  public getAll(): Observable<any[]> {
+  public getAll(apiMethod: string): Observable<any[]> {
     //this.spinner.show();
 
-    return this.http.get<any[]>(this.baseUrl + 'items')
+    return this.http.get<any[]>(this.baseUrl + apiMethod)
       .pipe(
         catchError(this.handleError),
         finalize(() => {
@@ -24,7 +25,7 @@ export class BaseRepository {
       );
   }
 
-  public getOne(id: number): Observable<any> {
+  public getOne(apiMethod: string, id: number): Observable<any> {
     //this.spinner.show();
 
     return this.http.get<any>(this.baseUrl + 'items/' + id)
@@ -36,10 +37,10 @@ export class BaseRepository {
       );
   }
 
-  public create(data: any): Observable<any> {
+  public create(apiMethod: string, data: any): Observable<any> {
     //this.spinner.show();
 
-    return this.http.post<any>(this.baseUrl + 'items', data)
+    return this.http.post<any>(this.baseUrl + apiMethod, data)
       .pipe(
         catchError(this.handleError),
         finalize(() => {

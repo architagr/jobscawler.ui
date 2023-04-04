@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { LoginPopupComponent } from './login-popup/login-popup.component';
 import {MatDialogModule} from '@angular/material/dialog';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import {MatDialogModule} from '@angular/material/dialog';
   imports: [
     CommonModule,
     MainRoutingModule,
-    MatDialogModule
+    MatDialogModule,
+    FormsModule
   ],
   entryComponents:[
     LoginPopupComponent 
