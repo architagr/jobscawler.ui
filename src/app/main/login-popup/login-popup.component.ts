@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MatDialogRef } from '@angular/material/dialog';
+import { Router } from '@angular/router';
 import random from 'random';
 import { BaseRepository } from 'src/app/core/BaseRepository';
 import { environment } from '../../../environments/environment';
@@ -17,7 +19,7 @@ export class LoginPopupComponent {
   errorMessage = '';
   otp='';
 
-  constructor(private repo: BaseRepository){
+  constructor(private repo: BaseRepository, private router: Router, private dialogRef: MatDialogRef<LoginPopupComponent>){
     this.loginOtp = random.int(1000, 9999);
   }
 
@@ -39,7 +41,8 @@ export class LoginPopupComponent {
   login(){
     this.repo.create('login', '1234').subscribe(res=>{
       if(res === true){
-        alert("Login success");
+        this.dialogRef.close();
+        this.router.navigate(['candidate']);
       }
     })
   }
