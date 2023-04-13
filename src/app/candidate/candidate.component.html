@@ -87,7 +87,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class=" dropdown has-mega-menu" id="has-mega-menu" routerLink="/candidate/search">
+                            <li class="dropdown has-mega-menu" id="has-mega-menu" routerLink="/candidate/search">
                                 <span>Find Jobs</span>
                                 <!-- <div class="mega-menu">
                                     <div class="mega-menu-bar row">
@@ -207,7 +207,7 @@
                                             Dashboard</a></li>
                                 </ul>
                             </li>
-                            <li class=" dropdown"><span>Candidates</span>
+                            <li class="dropdown"><span>Candidates</span>
                                 <ul>
                                     <li class="dropdown"><span class="">Candidates List</span>
                                         <ul>
@@ -246,7 +246,7 @@
                                             Dashboard</a></li>
                                 </ul>
                             </li>
-                            <li class=" dropdown"><span>Blog</span>
+                            <li class="dropdown"><span>Blog</span>
                                 <ul>
                                     <li class=""><a href="https://superio-next.vercel.app/blog-list-v1">Blog
                                             List V1</a></li>
@@ -304,10 +304,15 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="outer-box"><button class="menu-btn"><span class="count">1</span><span
-                            class="icon la la-heart-o"></span></button><button class="menu-btn"><span
-                            class="icon la la-bell"></span></button>
-                    <div class="dropdown dashboard-option">
+                <div class="outer-box" *ngIf="this.userDetail && this.userDetail.id > 0">
+                        <button class="menu-btn">
+                                <span class="count">1</span>
+                                <span class="icon la la-heart-o"></span>
+                        </button>
+                        <button class="menu-btn">
+                                <span class="icon la la-bell"></span>
+                        </button>
+                    <div class="dropdown dashboard-option" (click)="showDropDown = !showDropDown">
                         <a class="dropdown-toggle" role="button"
                             data-toggle="dropdown" aria-expanded="false">
                             <img alt="avatar" src="/assets/images/company-6.png"
@@ -315,7 +320,7 @@
                                 loading="lazy" style="color: transparent;">
                                 <span class="name">My Account</span>
                         </a>
-                        <ul class="dropdown-menu" style="">
+                        <ul class="dropdown-menu" [ngClass]="{'show': showDropDown}">
                             <li class="active mb-1"><a
                                     href="https://superio-next.vercel.app/employers-dashboard/dashboard"><i
                                         class="la la-home"></i> Dashboard</a></li>
@@ -346,12 +351,23 @@
                             <li class=" mb-1"><a
                                     href="https://superio-next.vercel.app/employers-dashboard/change-password"><i
                                         class="la la-lock"></i> Change Password</a></li>
-                            <li class=" mb-1"><a href="https://superio-next.vercel.app/login"><i
+                            <li class=" mb-1"><a href="javascript: void(0)" (click)="logout()"><i
                                         class="la la-sign-out"></i> Logout</a></li>
                             <li class=" mb-1"><a href="https://superio-next.vercel.app/"><i
                                         class="la la-trash"></i> Delete Profile</a></li>
                         </ul>
                     </div>
+                </div>
+                <div class="outer-box" *ngIf="!this.userDetail || !this.userDetail.id">
+                        <a class="upload-cv" href="javascript: void(0)">Upload your CV</a>
+                        <div class="btn-box">
+                                <a href="javascript: void(0)" class="theme-btn btn-style-three call-modal">
+                                        Login / Register
+                                </a>
+                                <a class="theme-btn btn-style-one"
+                                        href="javascript: void(0)">Job Post
+                                </a>
+                        </div>
                 </div>
             </div>
         </div>
@@ -927,7 +943,8 @@
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li class="ps-menuitem-root ps-submenu-root css-1642kfo"><a
+                                        <li class="ps-menuitem-root ps-submenu-root css-1642kfo">
+                                                <a
                                                 data-testid="ps-menu-button-test-id"
                                                 class="ps-menu-button css-1bdadyq"><span
                                                     class="ps-menu-label css-12w9als">Blog</span><span
@@ -975,7 +992,8 @@
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li class="ps-menuitem-root ps-submenu-root css-1642kfo"><a
+                                        <li class="ps-menuitem-root ps-submenu-root css-1642kfo">
+                                                <a
                                                 data-testid="ps-menu-button-test-id"
                                                 class="ps-menu-button css-1bdadyq"><span
                                                     class="ps-menu-label css-12w9als">Pages</span><span
@@ -1043,7 +1061,8 @@
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li class="ps-menuitem-root ps-submenu-root css-1642kfo"><a
+                                        <li class="ps-menuitem-root ps-submenu-root css-1642kfo">
+                                                <a
                                                 data-testid="ps-menu-button-test-id"
                                                 class="ps-menu-button css-1bdadyq"><span
                                                     class="ps-menu-label css-12w9als">Shop</span><span
