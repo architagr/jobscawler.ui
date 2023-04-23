@@ -3,6 +3,7 @@ import { MatDialogRef } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import random from 'random';
 import { BaseRepository } from 'src/app/core/BaseRepository';
+import { loginDetail } from 'src/app/models/loginDetails';
 import { environment } from '../../../environments/environment';
 
 @Component({
@@ -38,11 +39,22 @@ export class LoginPopupComponent {
     }
   }
 
-  login(){
-    this.repo.create('login', '1234').subscribe(res=>{
-      if(res === true){
+  login(user: string, cred: string){
+    var loginObj: loginDetail = {
+      loginType: this.loginWithOtp?"OTP":"credential",
+      password: cred,
+      userName:  user.toString()
+    };
+    this.repo.create('login', loginObj).subscribe(res=>{
+      if(res && res.status == "OK"){
+        console.log("login success");
+        localStorage.setItem("info", res.data);
+        localStorage.setItem("userName", "Guest");
         this.dialogRef.close();
         this.router.navigate(['candidate']);
+      }
+      else{
+        console.log("login failed");
       }
     })
   }

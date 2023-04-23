@@ -42,7 +42,7 @@
                 </div>
                 <div class="form-group">
                     <button class="theme-btn btn-style-one" (click)="generateOTP()" *ngIf="!otpSent">Get OTP</button>
-                    <button class="theme-btn btn-style-one" (click)="login()" *ngIf="otpSent">Log In</button>
+                    <button class="theme-btn btn-style-one" (click)="login(mobileNo, otp)" *ngIf="otpSent">Log In</button>
                 </div>
             </div>
             <div class="bottom-box">

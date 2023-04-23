@@ -9,6 +9,9 @@ export class CandidateService {
   constructor() { }
 
   getUser(){
-    return new user(0, 'Gaurav');
+    var userName = localStorage.getItem("userName");
+    if(userName)
+      return new user(1, 'Gaurav');
+    else return new user(0, 'Null')
   }
 }
