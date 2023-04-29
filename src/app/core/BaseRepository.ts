@@ -11,16 +11,16 @@ import { environment } from 'src/environments/environment';
 export class BaseRepository {
   private baseUrl = environment.BaseUrl;
 
-  constructor(private http: HttpClient) { }//ng update @angular/cli @angular/core
+  constructor(private http: HttpClient, private spinner: NgxSpinnerService) { }//ng update @angular/cli @angular/core
 
-  public getAll(apiMethod: string): Observable<any[]> {
-    //this.spinner.show();
+  public getAll(apiMethod: string): Observable<any> {
+    this.spinner.show();
 
     return this.http.get<any[]>(this.baseUrl + apiMethod)
       .pipe(
         catchError(this.handleError),
         finalize(() => {
-          //this.spinner.hide();
+          this.spinner.hide();
         })
       );
   }

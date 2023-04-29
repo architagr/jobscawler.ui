@@ -2,12 +2,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CandidateModule } from './candidate/candidate.module';
 import { BaseRepository } from './core/BaseRepository';
 import { MainModule } from './main/main.module';
+import { NgxSpinnerModule } from 'ngx-spinner';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,9 @@ import { MainModule } from './main/main.module';
     AppRoutingModule,
     MainModule,
     FormsModule,
-    CandidateModule
+    CandidateModule,
+    BrowserAnimationsModule,
+    NgxSpinnerModule.forRoot({ type: 'ball-scale-multiple' })
   ],
   providers: [BaseRepository],
   bootstrap: [AppComponent]

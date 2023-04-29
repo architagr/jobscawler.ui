@@ -171,156 +171,26 @@
                         <h4>Recent Applicants</h4>
                     </div>
                     <div class="widget-content">
-                        <div class="row">
-                            <div class="job-block col-lg-6 col-md-12 col-sm-12">
+                        <div class="row" *ngIf="jobs && jobs.length > 0">
+                            <div class="job-block col-lg-6 col-md-12 col-sm-12" *ngFor="let job of jobs">
                                 <div class="inner-box">
-                                    <div class="content"><span class="company-logo"><img src="/images/resource/company-logo/1-1.png"
-                                                alt="item brand"></span>
-                                        <h4><a href="/job-single-v5/1">Software Engineer (Android), Libraries</a></h4>
+                                    <div class="content">
+                                        <span class="company-logo">
+                                            <img src="/assets/images/company-logo/1-1.png" alt="item brand">
+                                        </span>
+                                        <h4><a href="/detail">{{job.title}}</a></h4>
                                         <ul class="job-info">
-                                            <li><span class="icon flaticon-briefcase"></span>Segment</li>
-                                            <li><span class="icon flaticon-map-locator"></span>London, UK</li>
+                                            <li><span class="icon flaticon-briefcase"></span>{{job.companyName}}</li>
+                                            <li><span class="icon flaticon-map-locator"></span>{{job.location}}</li>
                                             <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
                                             <li><span class="icon flaticon-money"></span> $35k - $45k</li>
                                         </ul>
                                         <ul class="job-other-info">
-                                            <li class="time">Full Time</li>
+                                            <li class="time">{{job.experience}}</li>
                                             <li class="privacy">Private</li>
                                             <li class="required">Urgent</li>
-                                        </ul><button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="job-block col-lg-6 col-md-12 col-sm-12">
-                                <div class="inner-box">
-                                    <div class="content"><span class="company-logo"><img src="/images/resource/company-logo/1-1.png"
-                                                alt="item brand"></span>
-                                        <h4><a href="/job-single-v5/1">Software Engineer (Android), Libraries</a></h4>
-                                        <ul class="job-info">
-                                            <li><span class="icon flaticon-briefcase"></span>Segment</li>
-                                            <li><span class="icon flaticon-map-locator"></span>London, UK</li>
-                                            <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
-                                            <li><span class="icon flaticon-money"></span> $35k - $45k</li>
                                         </ul>
-                                        <ul class="job-other-info">
-                                            <li class="time">Full Time</li>
-                                            <li class="privacy">Private</li>
-                                            <li class="required">Urgent</li>
-                                        </ul><button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="job-block col-lg-6 col-md-12 col-sm-12">
-                                <div class="inner-box">
-                                    <div class="content"><span class="company-logo"><img src="/images/resource/company-logo/1-1.png"
-                                                alt="item brand"></span>
-                                        <h4><a href="/job-single-v5/1">Software Engineer (Android), Libraries</a></h4>
-                                        <ul class="job-info">
-                                            <li><span class="icon flaticon-briefcase"></span>Segment</li>
-                                            <li><span class="icon flaticon-map-locator"></span>London, UK</li>
-                                            <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
-                                            <li><span class="icon flaticon-money"></span> $35k - $45k</li>
-                                        </ul>
-                                        <ul class="job-other-info">
-                                            <li class="time">Full Time</li>
-                                            <li class="privacy">Private</li>
-                                            <li class="required">Urgent</li>
-                                        </ul><button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="job-block col-lg-6 col-md-12 col-sm-12">
-                                <div class="inner-box">
-                                    <div class="content"><span class="company-logo"><img src="/images/resource/company-logo/1-1.png"
-                                                alt="item brand"></span>
-                                        <h4><a href="/job-single-v5/1">Software Engineer (Android), Libraries</a></h4>
-                                        <ul class="job-info">
-                                            <li><span class="icon flaticon-briefcase"></span>Segment</li>
-                                            <li><span class="icon flaticon-map-locator"></span>London, UK</li>
-                                            <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
-                                            <li><span class="icon flaticon-money"></span> $35k - $45k</li>
-                                        </ul>
-                                        <ul class="job-other-info">
-                                            <li class="time">Full Time</li>
-                                            <li class="privacy">Private</li>
-                                            <li class="required">Urgent</li>
-                                        </ul><button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="job-block col-lg-6 col-md-12 col-sm-12">
-                                <div class="inner-box">
-                                    <div class="content"><span class="company-logo"><img src="/images/resource/company-logo/1-1.png"
-                                                alt="item brand"></span>
-                                        <h4><a href="/job-single-v5/1">Software Engineer (Android), Libraries</a></h4>
-                                        <ul class="job-info">
-                                            <li><span class="icon flaticon-briefcase"></span>Segment</li>
-                                            <li><span class="icon flaticon-map-locator"></span>London, UK</li>
-                                            <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
-                                            <li><span class="icon flaticon-money"></span> $35k - $45k</li>
-                                        </ul>
-                                        <ul class="job-other-info">
-                                            <li class="time">Full Time</li>
-                                            <li class="privacy">Private</li>
-                                            <li class="required">Urgent</li>
-                                        </ul><button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="job-block col-lg-6 col-md-12 col-sm-12">
-                                <div class="inner-box">
-                                    <div class="content"><span class="company-logo"><img src="/images/resource/company-logo/1-1.png"
-                                                alt="item brand"></span>
-                                        <h4><a href="/job-single-v5/1">Software Engineer (Android), Libraries</a></h4>
-                                        <ul class="job-info">
-                                            <li><span class="icon flaticon-briefcase"></span>Segment</li>
-                                            <li><span class="icon flaticon-map-locator"></span>London, UK</li>
-                                            <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
-                                            <li><span class="icon flaticon-money"></span> $35k - $45k</li>
-                                        </ul>
-                                        <ul class="job-other-info">
-                                            <li class="time">Full Time</li>
-                                            <li class="privacy">Private</li>
-                                            <li class="required">Urgent</li>
-                                        </ul><button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="job-block col-lg-6 col-md-12 col-sm-12">
-                                <div class="inner-box">
-                                    <div class="content"><span class="company-logo"><img src="/images/resource/company-logo/1-1.png"
-                                                alt="item brand"></span>
-                                        <h4><a href="/job-single-v5/1">Software Engineer (Android), Libraries</a></h4>
-                                        <ul class="job-info">
-                                            <li><span class="icon flaticon-briefcase"></span>Segment</li>
-                                            <li><span class="icon flaticon-map-locator"></span>London, UK</li>
-                                            <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
-                                            <li><span class="icon flaticon-money"></span> $35k - $45k</li>
-                                        </ul>
-                                        <ul class="job-other-info">
-                                            <li class="time">Full Time</li>
-                                            <li class="privacy">Private</li>
-                                            <li class="required">Urgent</li>
-                                        </ul><button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="job-block col-lg-6 col-md-12 col-sm-12">
-                                <div class="inner-box">
-                                    <div class="content"><span class="company-logo"><img src="/images/resource/company-logo/1-1.png"
-                                                alt="item brand"></span>
-                                        <h4><a href="/job-single-v5/1">Software Engineer (Android), Libraries</a></h4>
-                                        <ul class="job-info">
-                                            <li><span class="icon flaticon-briefcase"></span>Segment</li>
-                                            <li><span class="icon flaticon-map-locator"></span>London, UK</li>
-                                            <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
-                                            <li><span class="icon flaticon-money"></span> $35k - $45k</li>
-                                        </ul>
-                                        <ul class="job-other-info">
-                                            <li class="time">Full Time</li>
-                                            <li class="privacy">Private</li>
-                                            <li class="required">Urgent</li>
-                                        </ul><button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
+                                        <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
                                     </div>
                                 </div>
                             </div>

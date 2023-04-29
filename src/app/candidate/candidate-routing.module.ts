@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CandidateComponent } from './candidate.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { JobDescriptionComponent } from './job-description/job-description.component';
 import { JobFilterComponent } from './job-filter/job-filter.component';
 
 const routes: Routes = [
@@ -14,6 +15,9 @@ const routes: Routes = [
       },
       {
         path:'search', component:JobFilterComponent
+      },
+      {
+        path:'detail', component:JobDescriptionComponent
       }
     ]
   }
