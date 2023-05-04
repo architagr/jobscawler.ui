@@ -4,6 +4,8 @@ import { CandidateComponent } from './candidate.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { JobDescriptionComponent } from './job-description/job-description.component';
 import { JobFilterComponent } from './job-filter/job-filter.component';
+import { HomeComponent } from './dashboard/home/home.component';
+import { ProfileComponent } from './dashboard/profile/profile.component';
 
 const routes: Routes = [
   {
@@ -11,13 +13,17 @@ const routes: Routes = [
     component: CandidateComponent,
     children:[
       {
-        path:'', component: DashboardComponent
+        path:'', component: DashboardComponent,
+        children: [
+          {path:'', component: HomeComponent},
+          {path:'profile', component: ProfileComponent}
+        ]
       },
       {
         path:'search', component:JobFilterComponent
       },
       {
-        path:'detail', component:JobDescriptionComponent
+        path:'detail/:id', component:JobDescriptionComponent
       }
     ]
   }

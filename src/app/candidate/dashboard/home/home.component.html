@@ -1,0 +1,150 @@
+<div class="dashboard-outer">
+    <div class="upper-title-box">
+        <h4>Your Learnings</h4>
+    </div>
+    <div class="mb-4 ms-0 show-1023"><button type="button" class="theme-btn toggle-filters"><span
+                class="flaticon-menu-1"></span> Menu</button></div>
+    <div class="row">
+        <div class="ui-block col-xl-4 col-lg-6 col-md-6 col-sm-12">
+            <div class="ui-item ui-blue card">
+                <div class="top">
+                    <div class="left">
+                        <div class="inner-text">
+                            <i class="fa fa-video"></i>
+                            <span>course</span>
+                        </div>
+                        <h5>Advance Javascript</h5>
+                        <h6 class="sub">By Kyle Simpson</h6>
+                    </div>
+                    <div class="right">
+                        <img class="logo-icon" src="/assets/images/logo/logo-JS.png">
+                    </div>
+                </div>
+                <hr>
+                <div class="bottom">
+                    text 1 | text 2 | text 3
+                </div>
+            </div>
+        </div>
+        <div class="ui-block col-xl-4 col-lg-6 col-md-6 col-sm-12">
+            <div class="ui-item ui-blue card">
+                <div class="top">
+                    <div class="left">
+                        <div class="inner-text">
+                            <i class="fa fa-video"></i>
+                            <span>course</span>
+                        </div>
+                        <h5>Advance Javascript</h5>
+                        <h6 class="sub">By Kyle Simpson</h6>
+                    </div>
+                    <div class="right">
+                        <img class="logo-icon" src="/assets/images/logo/logo-JS.png">
+                    </div>
+                </div>
+                <hr>
+                <div class="bottom">
+                    text 1 | text 2 | text 3
+                </div>
+            </div>
+        </div>
+        <div class="ui-block col-xl-4 col-lg-6 col-md-6 col-sm-12">
+            <div class="ui-item ui-blue card">
+                <div class="top">
+                    <div class="left">
+                        <div class="inner-text">
+                            <i class="fa fa-video"></i>
+                            <span>course</span>
+                        </div>
+                        <h5>Advance Javascript</h5>
+                        <h6 class="sub">By Kyle Simpson</h6>
+                    </div>
+                    <div class="right">
+                        <img class="logo-icon" src="/assets/images/logo/logo-JS.png">
+                    </div>
+                </div>
+                <hr>
+                <div class="bottom">
+                    text 1 | text 2 | text 3
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="upper-title-box">
+        <h4>Your Earnings</h4>
+    </div>
+    <div class="row">
+        <div class="ui-block col-xl-3 col-lg-6 col-md-6 col-sm-12">
+            <div class="ui-item ui-blue">
+                <div class="left"><i class="icon la flaticon-briefcase"></i></div>
+                <div class="right">
+                    <h4>22</h4>
+                    <p>Posted Jobs</p>
+                </div>
+            </div>
+        </div>
+        <div class="ui-block col-xl-3 col-lg-6 col-md-6 col-sm-12">
+            <div class="ui-item ui-red">
+                <div class="left"><i class="icon la la-file-invoice"></i></div>
+                <div class="right">
+                    <h4>9382</h4>
+                    <p>Application</p>
+                </div>
+            </div>
+        </div>
+        <div class="ui-block col-xl-3 col-lg-6 col-md-6 col-sm-12">
+            <div class="ui-item ui-yellow">
+                <div class="left"><i class="icon la la-comment-o"></i></div>
+                <div class="right">
+                    <h4>74</h4>
+                    <p>Messages</p>
+                </div>
+            </div>
+        </div>
+        <div class="ui-block col-xl-3 col-lg-6 col-md-6 col-sm-12">
+            <div class="ui-item ui-green">
+                <div class="left"><i class="icon la la-bookmark-o"></i></div>
+                <div class="right">
+                    <h4>32</h4>
+                    <p>Shortlist</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="applicants-widget ls-widget">
+                <div class="widget-title">
+                    <h4>Recent Applicants</h4>
+                </div>
+                <div class="widget-content">
+                    <div class="row" *ngIf="jobs && jobs.length > 0">
+                        <div class="job-block col-lg-6 col-md-12 col-sm-12" *ngFor="let job of jobs">
+                            <div class="inner-box">
+                                <div class="content">
+                                    <span class="company-logo">
+                                        <img src="/assets/images/company-logo/1-1.png" alt="item brand">
+                                    </span>
+                                    <h4><a href="/detail">{{job.title}}</a></h4>
+                                    <ul class="job-info">
+                                        <li><span class="icon flaticon-briefcase"></span>{{job.companyName}}</li>
+                                        <li><span class="icon flaticon-map-locator"></span>{{job.location}}</li>
+                                        <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
+                                        <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+                                    </ul>
+                                    <ul class="job-other-info">
+                                        <li class="time">{{job.experience}}</li>
+                                        <li class="privacy">Private</li>
+                                        <li class="required">Urgent</li>
+                                    </ul>
+                                    <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

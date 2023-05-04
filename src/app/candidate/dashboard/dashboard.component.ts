@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { BaseRepository } from 'src/app/core/BaseRepository';
-import { JobDetail, JobResponse } from 'src/app/models/jobDetails';
 
 @Component({
   selector: 'app-dashboard',
@@ -8,16 +6,19 @@ import { JobDetail, JobResponse } from 'src/app/models/jobDetails';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent {
-  jobs?: JobDetail[]
-  constructor(private repository: BaseRepository){}
-
   ngOnInit(){
-    this.getJobDetails();
-  }
-
-  getJobDetails(){
-    this.repository.getAll("getJobs").subscribe((result:JobResponse)=>{
-      this.jobs = result.jobs;
-    });
+    const list = document.getElementById("navigation");
+    const items = list?.getElementsByTagName("li");
+    if(items){
+      for (let i = 0; i < items.length; i++) {
+        items[i].addEventListener("click", function () {
+          const current = document.getElementsByClassName("active");
+          if (current.length > 0) {
+            current[0].classList.remove("active");
+          }
+          this.classList.add("active");
+        });
+      }
+    }
   }
 }

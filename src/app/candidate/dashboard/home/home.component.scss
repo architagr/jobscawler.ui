@@ -1,0 +1,50 @@
+
+.upper-title-box{
+    margin-bottom: 10px;
+}
+
+.card{
+    background: color(srgb 0.1921 0.1922 0.381);
+    color: white;
+    align-items: baseline;
+    padding: 15px;
+    display: block;
+    height: 9.5rem;
+    hr{
+        position: unset;
+        margin: 10px 0;
+    }
+    .top{
+        width: 100%;
+        display: flex;
+        .inner-text{
+            color: color(srgb 0.5716 0.5766 0.7256);
+            background: color(srgb 0.1437 0.1289 0.272);
+            width: fit-content;
+            padding: 0 5px;
+            i{
+                margin:0 5px;
+                font-size: 14px;
+            }
+            span{
+                font-size: 18px;
+            }
+        }
+
+        h5{
+            margin-top: 10px;
+        }
+        .sub{
+            color: color(srgb 0.5716 0.5766 0.7256);
+            font-size: 14px;
+        }
+        .right{
+            flex:auto;
+            .logo-icon{
+                height: 40px;
+                width: 40px;
+            }
+        }
+       
+    }
+}

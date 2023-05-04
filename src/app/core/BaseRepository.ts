@@ -1,9 +1,10 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse, HttpParams } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { catchError, finalize } from 'rxjs/operators';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { environment } from 'src/environments/environment';
+import { query } from '@angular/animations';
 
 @Injectable({
   providedIn: 'root'
@@ -25,10 +26,11 @@ export class BaseRepository {
       );
   }
 
-  public getOne(apiMethod: string, id: number): Observable<any> {
+  public getOne(apiMethod: string, id: any): Observable<any> {
     //this.spinner.show();
-
-    return this.http.get<any>(this.baseUrl + 'items/' + id)
+    let queryParams = new HttpParams();
+    queryParams = queryParams.append("jobId", id);
+    return this.http.get<any>(this.baseUrl + apiMethod, {params: queryParams})
       .pipe(
         catchError(this.handleError),
         finalize(() => {
@@ -38,13 +40,13 @@ export class BaseRepository {
   }
 
   public create(apiMethod: string, data: any): Observable<any> {
-    //this.spinner.show();
+    this.spinner.show();
 
     return this.http.post<any>(this.baseUrl + apiMethod, data)
       .pipe(
         catchError(this.handleError),
         finalize(() => {
-          //this.spinner.hide();
+          this.spinner.hide();
         })
       );
   }

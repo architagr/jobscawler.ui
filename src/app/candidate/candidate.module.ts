@@ -10,6 +10,8 @@ import { JobDescriptionComponent } from './job-description/job-description.compo
 import { JobCardComponent } from './job-card/job-card.component';
 import { FormsModule } from '@angular/forms';
 import { NgxSpinnerModule } from 'ngx-spinner';
+import { ProfileComponent } from './dashboard/profile/profile.component';
+import { HomeComponent } from './dashboard/home/home.component';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { NgxSpinnerModule } from 'ngx-spinner';
     JobFilterComponent,
     CandidateComponent,
     JobDescriptionComponent,
-    JobCardComponent
+    JobCardComponent,
+    ProfileComponent,
+    HomeComponent
   ],
   imports: [
     CommonModule,

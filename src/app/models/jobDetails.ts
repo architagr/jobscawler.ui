@@ -1,4 +1,5 @@
 export class JobDetail{
+    _id: string;
     title: string;
     companyName: string;
     location: string;
@@ -9,18 +10,19 @@ export class JobDetail{
     description: string;
     jobLink: string;
 
-    constructor(title:string, companyName:string, location:string, companyDetailsUrl:string
+    constructor(id:string, title:string, companyName:string, location:string, companyDetailsUrl:string
         , jobType:string, jobModel:string, experience:string, description:string, jobLink:string){
-        this.title = title;
-        this.companyName = companyName;
-        this.location = location;
-        this.companyDetailsUrl = companyDetailsUrl;
-        this.jobType = jobType;
-        this.jobModel = jobModel;
-        this.experience = experience;
-        this.description = description;
-        this.jobLink = jobLink;
-    }
+            this._id = id;
+            this.title = title;
+            this.companyName = companyName;
+            this.location = location;
+            this.companyDetailsUrl = companyDetailsUrl;
+            this.jobType = jobType;
+            this.jobModel = jobModel;
+            this.experience = experience;
+            this.description = description;
+            this.jobLink = jobLink;
+        }
 }
 
 export class JobResponse{
