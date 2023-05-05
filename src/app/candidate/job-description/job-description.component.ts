@@ -16,9 +16,6 @@ export class JobDescriptionComponent {
 
   ngOnInit(){
     this.getJobDetail(this.route.snapshot.params["id"]);
-    // this.route.queryParams.subscribe(res=>{
-    //   this.getJobDetail(res["id"]);
-    // })
   }
 
   getJobDetail(jobId: string){

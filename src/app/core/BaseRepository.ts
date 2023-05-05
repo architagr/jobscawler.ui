@@ -27,14 +27,14 @@ export class BaseRepository {
   }
 
   public getOne(apiMethod: string, id: any): Observable<any> {
-    //this.spinner.show();
+    this.spinner.show();
     let queryParams = new HttpParams();
     queryParams = queryParams.append("jobId", id);
     return this.http.get<any>(this.baseUrl + apiMethod, {params: queryParams})
       .pipe(
         catchError(this.handleError),
         finalize(() => {
-          //this.spinner.hide();
+          this.spinner.hide();
         })
       );
   }

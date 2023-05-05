@@ -8,61 +8,20 @@
                         <h4>{{job.title}}</h4>
                         <ul class="job-info">
                             <li><span class="icon flaticon-briefcase"></span>Segment</li>
-                            <li><span class="icon flaticon-map-locator"></span>London, UK</li>
+                            <li><span class="icon flaticon-map-locator"></span>{{job.location}}</li>
                             <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
                             <li><span class="icon flaticon-money"></span> $35k - $45k</li>
                         </ul>
                         <ul class="job-other-info">
-                            <li class="time">Full Time</li>
+                            <li class="time">{{job.experience}}</li>
                             <li class="privacy">Private</li>
                             <li class="required">Urgent</li>
                         </ul>
                     </div>
-                    <div class="btn-box"><a href="https://superio-next.vercel.app/job-single-v1/1#"
-                            class="theme-btn btn-style-one" data-bs-toggle="modal"
-                            data-bs-target="#applyJobModal">Apply For Job</a><button class="bookmark-btn"><i
-                                class="flaticon-bookmark"></i></button></div>
-                    <div class="modal fade" id="applyJobModal" tabindex="-1" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                            <div class="apply-modal-content modal-content">
-                                <div class="text-center">
-                                    <h3 class="title">Apply for this job</h3><button type="button"
-                                        class="closed-modal" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <form class="default-form job-apply-form">
-                                    <div class="row">
-                                        <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                            <div class="uploading-outer apply-cv-outer">
-                                                <div class="uploadButton"><input class="uploadButton-input"
-                                                        type="file" name="attachments[]"
-                                                        accept="image/*, application/pdf" id="upload"
-                                                        required=""><label
-                                                        class="uploadButton-button ripple-effect"
-                                                        for="upload">Upload CV (doc, docx, pdf)</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-12 col-md-12 col-sm-12 form-group"><textarea
-                                                class="darma" name="message" placeholder="Message"
-                                                required=""></textarea></div>
-                                        <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                            <div class="input-group checkboxes square"><input
-                                                    type="checkbox" name="remember-me"
-                                                    id="rememberMe"><label for="rememberMe"
-                                                    class="remember"><span class="custom-checkbox"></span>
-                                                    You accept our <span data-bs-dismiss="modal"><a
-                                                            href="https://superio-next.vercel.app/terms">Terms
-                                                            and Conditions and Privacy
-                                                            Policy</a></span></label></div>
-                                        </div>
-                                        <div class="col-lg-12 col-md-12 col-sm-12 form-group"><button
-                                                class="theme-btn btn-style-one w-100" type="submit"
-                                                name="submit-form">Apply Job</button></div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+                    <div class="btn-box">
+                        <a target="_blank" [href]="job.jobLink" class="theme-btn btn-style-one">Apply For Job</a>
+                        <button class="bookmark-btn">
+                            <i class="flaticon-bookmark"></i></button>
                     </div>
                 </div>
             </div>
@@ -74,13 +33,8 @@
                 <div class="content-column col-lg-8 col-md-12 col-sm-12">
                     <div class="job-detail">
                         <h4>Job Description</h4>
-                        <p>As a Product Designer, you will work within a Product Delivery Team fused with
-                            UX, engineering, product and data talent. You will help the team design
-                            beautiful interfaces that solve business challenges for our clients. We work
-                            with a number of Tier 1 banks on building web-based applications for AML, KYC
-                            and Sanctions List management workflows. This role is ideal if you are looking
-                            to segue your career into the FinTech or Big Data arenas.</p>
-                        <h4>Key Responsibilities</h4>
+                        <p [innerHtml]="job.description"></p>
+                        <!-- <h4>Key Responsibilities</h4>
                         <ul class="list-style-three">
                             <li>Be involved in every step of the product design cycle from discovery to
                                 developer handoff and user acceptance testing.</li>
@@ -106,7 +60,7 @@
                             <li>You have some previous experience working in an agile environment – Think
                                 two-week sprints.</li>
                             <li>You are familiar using Jira and Confluence in your workflow</li>
-                        </ul>
+                        </ul> -->
                     </div>
                     <div class="other-options">
                         <div class="social-share">

@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { ProfileComponent } from './dashboard/profile/profile.component';
 import { HomeComponent } from './dashboard/home/home.component';
+import { NgSelectModule } from '@ng-select/ng-select';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { HomeComponent } from './dashboard/home/home.component';
   imports: [
     CommonModule,
     CandidateRoutingModule,
-    FormsModule
+    FormsModule,
+    NgSelectModule
   ],
   providers:[
     CandidateService
