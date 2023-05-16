@@ -8,7 +8,7 @@
             <div class="widget-title">
               <h4>My Profile</h4>
             </div>
-            <div class="widget-content">
+            <div class="widget-content" *ngIf="userDetail">
               <div class="uploading-outer">
                 <div class="uploadButton">
                   <input class="uploadButton-input" type="file" name="attachments[]"
@@ -20,26 +20,25 @@
                 <div class="text">Max file size is 1MB, Minimum dimension: 330x300 And Suitable files are .jpg
                   &amp; .png</div>
               </div>
-              <form action="https://superio-next.vercel.app/candidates-dashboard/my-profile#"
-                class="default-form">
+              <div class="default-form">
                 <div class="row">
                   <div class="form-group col-lg-6 col-md-12"><label>Full Name</label>
-                    <input type="text" name="name" placeholder="Jerome" required="" >
+                    <input type="text" name="fillname" placeholder="Jerome" [(ngModel)]="userDetail.name">
                   </div>
                   <div class="form-group col-lg-6 col-md-12"><label>Job Title</label>
-                    <input type="text" name="name" placeholder="UI Designer" required="">
+                    <input type="text" name="jobTital" placeholder="UI Designer" [(ngModel)]="userDetail.jobTitle">
                   </div>
                   <div class="form-group col-lg-6 col-md-12"><label>Phone</label>
-                    <input type="text" name="name" placeholder="0 123 456 7890" required="">
+                    <input type="text" name="phone" placeholder="0 123 456 7890" [(ngModel)]="userDetail.phone">
                   </div>
                   <div class="form-group col-lg-6 col-md-12"><label>Email address</label>
-                    <input type="text" name="name" placeholder="creativelayers" required="">
+                    <input type="text" name="email" placeholder="creativelayers" [(ngModel)]="userDetail.email">
                   </div>
                   <!-- <div class="form-group col-lg-6 col-md-12"><label>Website</label>
                     <input type="text" name="name" placeholder="www.jerome.com" required="">
                   </div> -->
                   <div class="form-group col-lg-3 col-md-12"><label>Current Salary($)</label>
-                    <select class="chosen-single form-select" required="">
+                    <select class="chosen-single form-select" required="" [(ngModel)]="userDetail.currentsalary">
                       <option>40-70 K</option>
                       <option>50-80 K</option>
                       <option>60-90 K</option>
@@ -48,7 +47,7 @@
                     </select>
                   </div>
                   <div class="form-group col-lg-3 col-md-12"><label>Gender</label>
-                    <select class="chosen-single form-select" required="">
+                    <select class="chosen-single form-select" required="" [(ngModel)]="userDetail.gender">
                       <option>Male</option>
                       <option>Female</option>
                       <option>Third Gender</option>
@@ -56,16 +55,16 @@
                     </select>
                   </div>
                   <div class="form-group col-lg-6 col-md-12"><label>Experience</label>
-                    <input type="text" name="name" placeholder="5-10 Years" required="">
+                    <input type="text" name="experience" placeholder="5-10 Years" [(ngModel)]="userDetail.experience">
                   </div>
                   <div class="form-group col-lg-6 col-md-12"><label>Age</label>
-                    <input type="number" name="age" placeholder="24" required="">
+                    <input type="number" name="age" placeholder="24" [(ngModel)]="userDetail.age">
                   </div>
                   <!-- <div class="form-group col-lg-6 col-md-12"><label>Education Levels</label>
                     <input type="text" name="name" placeholder="Certificate" required="">
                   </div> -->
                   <div class="form-group col-lg-6 col-md-12"><label>Languages</label>
-                    <input type="text" name="name" placeholder="English, Turkish" required="">
+                    <input type="text" name="name" placeholder="English, Turkish" [(ngModel)]="userDetail.language">
                   </div>
                   <div class="form-group col-lg-6 col-md-12"><label>Categories </label>
                     <ng-select [items]="category" bindLabel="name" placeholder="Select Category"
@@ -80,9 +79,9 @@
                       placeholder="Spent several years working on sheep on Wall Street. Had moderate success investing in Yugo&#39;s on Wall Street. Managed a small team buying and selling Pogo sticks for farmers. Spent several years licensing licorice in West Palm Beach, FL. Developed several new methods for working it banjos in the aftermarket. Spent a weekend importing banjos in West Palm Beach, FL.In this position, the Software Engineer collaborates with Evention&#39;s Development team to continuously enhance our current software solutions as well as create new solutions to eliminate the back-office operations and management challenges present"></textarea>
                   </div>
                   <div class="form-group col-lg-6 col-md-12"><button type="submit"
-                      class="theme-btn btn-style-one">Save</button></div>
+                      class="theme-btn btn-style-one" (click)="saveDetails()">Save</button></div>
                 </div>
-              </form>
+              </div>
             </div>
           </div>
         </div>

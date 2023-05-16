@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { user } from '../models/user';
+import { UserDetail } from '../models/userDetail';
 import { CandidateService } from './services/candidate.service';
 
 @Component({
@@ -10,12 +10,15 @@ import { CandidateService } from './services/candidate.service';
 })
 export class CandidateComponent {
   showDropDown: boolean = false;
-  userDetail?: user;
+  userDetail?: UserDetail;
 
   constructor(private router: Router, private service: CandidateService){}
 
   ngOnInit(){
-    this.userDetail = this.service.getUser();
+    this.service.getUser();
+    this.service.updateUserDetails.subscribe(res=>{
+      this.userDetail = res;
+    })
   }
 
   logout(){

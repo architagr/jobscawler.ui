@@ -1,15 +1,16 @@
-export class userDetail{
-    userId: number;
+export class UserDetail{
+    _id: string;
+    username: string;
     name: string;
     jobTitle: string;
     phone: string;
     email: string;
-    website:string;
-    currentSalary: number;
+    currentsalary: number;
     experience:number;
+    gender:string;
     age:number;
-    jobCategory:string;
+    jobcategory:string;
     language:string;
-    Description:string;
-    imagePath:string;
+    description:string;
+    imagepath:string;
 }

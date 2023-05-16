@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import { BaseRepository } from 'src/app/core/BaseRepository';
+import { Category } from 'src/app/models/category';
+import { UserDetail } from 'src/app/models/userDetail';
+import { CandidateService } from '../../services/candidate.service';
 
 @Component({
   selector: 'app-profile',
@@ -8,6 +12,7 @@ import { Component } from '@angular/core';
 export class ProfileComponent {
   imageUrl: string;
   selectedFile: File;
+  userDetail: UserDetail;
   category = [
     {id:1, name:"Banking"},
     {id:2, name:"Human Resources"},
@@ -16,7 +21,32 @@ export class ProfileComponent {
     {id:5, name:"Management"},
   ]
 
-  selected = [];
+  selected: Category[];
+
+  constructor(private repository: BaseRepository, private service: CandidateService){
+    this.userDetail = new UserDetail();
+  }
+
+  ngOnInit(){
+    this.getUserProfile();
+  }
+
+  getUserProfile(){
+    if(this.service.userDetail){
+      this.userDetailInit(this.service.userDetail);
+    }
+    else {
+      this.service.updateUserDetails.subscribe(res=>{
+        this.userDetailInit(res);
+      })
+    }
+  }
+
+  userDetailInit(res:UserDetail){
+    this.userDetail = res;
+    let categorystr = this.userDetail.jobcategory.split(',');
+    this.selected = this.category.filter(x=>categorystr.includes(x.name));
+  }
 
   onFileSelected(event: any) {
     this.selectedFile = event.target.files[0];
@@ -26,5 +56,16 @@ export class ProfileComponent {
       this.imageUrl = reader.result as string;
     };
     reader.readAsDataURL(this.selectedFile);
+    
+  }
+
+  saveDetails(){
+    console.log(this.userDetail);
+    this.userDetail.jobcategory = this.selected.map(x=>x.name).toString()
+    this.repository.create("saveUserProfile", this.userDetail).subscribe(res=>{
+      this.userDetail._id = res;
+      this.repository.uploadImage("saveuserImage/"+res, this.selectedFile).subscribe();
+    });
+    
   }
 }

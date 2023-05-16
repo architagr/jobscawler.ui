@@ -2,7 +2,7 @@
         <!-- <ngx-spinner type="ball-scale-multiple"></ngx-spinner> -->
     <span class="header-span"></span>
     <header class="main-header header-shaddow  fixed-header ">
-        <div class="container-fluid">
+        <div class="container-fluid" *ngIf="this.userDetail">
             <div class="main-box">
                 <div class="nav-outer">
                     <div class="logo-box">
@@ -305,7 +305,7 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="outer-box" *ngIf="this.userDetail && this.userDetail.id > 0">
+                <div class="outer-box" *ngIf="this.userDetail && this.userDetail._id">
                         <button class="menu-btn">
                                 <span class="count">1</span>
                                 <span class="icon la la-heart-o"></span>
@@ -342,7 +342,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="outer-box" *ngIf="!this.userDetail || !this.userDetail.id">
+                <div class="outer-box" *ngIf="!this.userDetail || !this.userDetail">
                         <a class="upload-cv" href="javascript: void(0)">Upload your CV</a>
                         <div class="btn-box">
                                 <a href="javascript: void(0)" class="theme-btn btn-style-three call-modal">

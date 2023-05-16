@@ -26,10 +26,9 @@ export class BaseRepository {
       );
   }
 
-  public getOne(apiMethod: string, id: any): Observable<any> {
+  public getOne(apiMethod: string): Observable<any> {
     this.spinner.show();
     let queryParams = new HttpParams();
-    queryParams = queryParams.append("jobId", id);
     return this.http.get<any>(this.baseUrl + apiMethod, {params: queryParams})
       .pipe(
         catchError(this.handleError),
@@ -49,6 +48,20 @@ export class BaseRepository {
           this.spinner.hide();
         })
       );
+  }
+
+  public uploadImage(apiMethod:string, file: File): Observable<any> {
+    this.spinner.show();
+    const formData = new FormData();
+    formData.append('image', file);
+
+    return this.http.post(this.baseUrl + apiMethod, formData)
+    .pipe(
+      catchError(this.handleError),
+      finalize(() => {
+        this.spinner.hide();
+      })
+    );
   }
 
   public update(id: number, data: any): Observable<any> {

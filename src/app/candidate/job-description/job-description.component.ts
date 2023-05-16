@@ -20,7 +20,7 @@ export class JobDescriptionComponent {
 
   getJobDetail(jobId: string){
     console.log("jobId: "+jobId);
-    this.repository.getOne("getJobDetail/"+ jobId, null).subscribe((result:JobDetail)=>{
+    this.repository.getOne("getJobDetail/"+ jobId).subscribe((result:JobDetail)=>{
       this.job = result;
     });
   }

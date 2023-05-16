@@ -49,7 +49,8 @@ export class LoginPopupComponent {
       if(res && res.status == "OK"){
         console.log("login success");
         localStorage.setItem("info", res.data);
-        localStorage.setItem("userName", "Guest");
+        localStorage.setItem("userName", loginObj.userName);
+        localStorage.setItem("loginType", loginObj.loginType);
         this.dialogRef.close();
         this.router.navigate(['candidate']);
       }
