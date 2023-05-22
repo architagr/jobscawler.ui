@@ -46,6 +46,7 @@ export class ProfileComponent {
     this.userDetail = res;
     let categorystr = this.userDetail.jobcategory.split(',');
     this.selected = this.category.filter(x=>categorystr.includes(x.name));
+    this.imageUrl = this.userDetail.imagepath;
   }
 
   onFileSelected(event: any) {
@@ -64,7 +65,9 @@ export class ProfileComponent {
     this.userDetail.jobcategory = this.selected.map(x=>x.name).toString()
     this.repository.create("saveUserProfile", this.userDetail).subscribe(res=>{
       this.userDetail._id = res;
-      this.repository.uploadImage("saveuserImage/"+res, this.selectedFile).subscribe();
+      if(this.selectedFile){
+        this.repository.uploadImage("saveuserImage/"+res, this.selectedFile).subscribe();
+      }
     });
     
   }
