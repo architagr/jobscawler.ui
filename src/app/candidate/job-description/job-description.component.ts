@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { BaseRepository } from 'src/app/core/BaseRepository';
 import { JobDetail, JobResponse } from 'src/app/models/jobDetails';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-job-description',
@@ -20,7 +21,7 @@ export class JobDescriptionComponent {
 
   getJobDetail(jobId: string){
     console.log("jobId: "+jobId);
-    this.repository.getOne("getJobDetail/"+ jobId).subscribe((result:JobDetail)=>{
+    this.repository.getOne(environment.JobUrl, "getJobDetail/"+ jobId).subscribe((result:JobDetail)=>{
       this.job = result;
     });
   }

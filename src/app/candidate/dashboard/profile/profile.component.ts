@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { BaseRepository } from 'src/app/core/BaseRepository';
 import { Category } from 'src/app/models/category';
 import { UserDetail } from 'src/app/models/userDetail';
+import { environment } from 'src/environments/environment';
 import { CandidateService } from '../../services/candidate.service';
 
 @Component({
@@ -63,10 +64,10 @@ export class ProfileComponent {
   saveDetails(){
     console.log(this.userDetail);
     this.userDetail.jobcategory = this.selected.map(x=>x.name).toString()
-    this.repository.create("saveUserProfile", this.userDetail).subscribe(res=>{
+    this.repository.create(environment.UserUrl, "saveUserProfile", this.userDetail).subscribe(res=>{
       this.userDetail._id = res;
       if(this.selectedFile){
-        this.repository.uploadImage("saveuserImage/"+res, this.selectedFile).subscribe();
+        this.repository.uploadImage(environment.UserUrl, "saveuserImage/"+res, this.selectedFile).subscribe();
       }
     });
     

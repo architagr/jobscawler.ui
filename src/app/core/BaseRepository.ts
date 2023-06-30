@@ -10,14 +10,14 @@ import { query } from '@angular/animations';
   providedIn: 'root'
 })
 export class BaseRepository {
-  private baseUrl = environment.BaseUrl;
+  //private baseUrl = environment.BaseUrl;
 
   constructor(private http: HttpClient, private spinner: NgxSpinnerService) { }//ng update @angular/cli @angular/core
 
-  public getAll(apiMethod: string): Observable<any> {
+  public getAll(baseUrl: string, apiMethod: string): Observable<any> {
     this.spinner.show();
 
-    return this.http.get<any[]>(this.baseUrl + apiMethod)
+    return this.http.get<any[]>(baseUrl + apiMethod)
       .pipe(
         catchError(this.handleError),
         finalize(() => {
@@ -26,10 +26,10 @@ export class BaseRepository {
       );
   }
 
-  public getOne(apiMethod: string): Observable<any> {
+  public getOne(baseUrl: string, apiMethod: string): Observable<any> {
     this.spinner.show();
     let queryParams = new HttpParams();
-    return this.http.get<any>(this.baseUrl + apiMethod, {params: queryParams})
+    return this.http.get<any>(baseUrl + apiMethod, {params: queryParams})
       .pipe(
         catchError(this.handleError),
         finalize(() => {
@@ -38,10 +38,10 @@ export class BaseRepository {
       );
   }
 
-  public create(apiMethod: string, data: any): Observable<any> {
+  public create(baseUrl: string, apiMethod: string, data: any): Observable<any> {
     this.spinner.show();
 
-    return this.http.post<any>(this.baseUrl + apiMethod, data)
+    return this.http.post<any>(baseUrl + apiMethod, data)
       .pipe(
         catchError(this.handleError),
         finalize(() => {
@@ -50,12 +50,12 @@ export class BaseRepository {
       );
   }
 
-  public uploadImage(apiMethod:string, file: File): Observable<any> {
+  public uploadImage(baseUrl: string, apiMethod:string, file: File): Observable<any> {
     this.spinner.show();
     const formData = new FormData();
     formData.append('image', file);
 
-    return this.http.post(this.baseUrl + apiMethod, formData)
+    return this.http.post(baseUrl + apiMethod, formData)
     .pipe(
       catchError(this.handleError),
       finalize(() => {
@@ -64,10 +64,10 @@ export class BaseRepository {
     );
   }
 
-  public update(id: number, data: any): Observable<any> {
+  public update(baseUrl: string, id: number, data: any): Observable<any> {
     //this.spinner.show();
 
-    return this.http.put<any>(this.baseUrl + 'items/' + id, data)
+    return this.http.put<any>(baseUrl + 'items/' + id, data)
       .pipe(
         catchError(this.handleError),
         finalize(() => {
@@ -76,10 +76,10 @@ export class BaseRepository {
       );
   }
 
-  public delete(id: number): Observable<any> {
+  public delete(baseUrl: string, id: number): Observable<any> {
     //this.spinner.show();
 
-    return this.http.delete<any>(this.baseUrl + 'items/' + id)
+    return this.http.delete<any>(baseUrl + 'items/' + id)
       .pipe(
         catchError(this.handleError),
         finalize(() => {

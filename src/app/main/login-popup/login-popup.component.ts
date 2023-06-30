@@ -13,12 +13,14 @@ import { environment } from '../../../environments/environment';
 })
 export class LoginPopupComponent {
   jobtitle = environment.portalName;
-  loginWithOtp = true;
+  loginWithOtp = false;
   otpSent = false;
   loginOtp: number = 0;
   mobileNo: string = '';
   errorMessage = '';
   otp='';
+  username: string = '';
+  password: string = '';
 
   constructor(private repo: BaseRepository, private router: Router, private dialogRef: MatDialogRef<LoginPopupComponent>){
     this.loginOtp = random.int(1000, 9999);
@@ -45,7 +47,7 @@ export class LoginPopupComponent {
       password: cred,
       userName:  user.toString()
     };
-    this.repo.create('login', loginObj).subscribe(res=>{
+    this.repo.create(environment.LoginUrl, 'Loginuser', loginObj).subscribe(res=>{
       if(res && res.status == "OK"){
         console.log("login success");
         localStorage.setItem("info", res.data);

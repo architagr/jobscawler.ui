@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { BaseRepository } from 'src/app/core/BaseRepository';
 import { JobDetail, JobResponse } from 'src/app/models/jobDetails';
 import { JobFilter } from 'src/app/models/jobfilter';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-home',
@@ -17,7 +18,7 @@ export class HomeComponent {
   }
 
   getJobDetails(){
-    this.repository.create("getJobs", new JobFilter("","",20, 1)).subscribe((result:JobResponse)=>{
+    this.repository.create(environment.JobUrl, "getJobs", new JobFilter("","",20, 0)).subscribe((result:JobResponse)=>{
       this.jobs = result.jobs;
     });
   }
